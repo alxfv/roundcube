@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class rcube_plugin_api</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> rcube_plugin_api</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The plugin loader and global API</p>
+		<p class="notes">
+			Located in <a class="field" href="_rcube_plugin_api.php.html">/rcube_plugin_api.php</a> (line <span class="field">30</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																				<div class="var-title">
+					<img src="../../media/images/StaticVariable.png" alt=" " />
+					static <span class="var-type">mixed</span>
+					<a href="#$instance" title="details" class="var-name">$instance</a>
+				</div>
+																																																																												<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$actionmap" title="details" class="var-name">$actionmap</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$actions" title="details" class="var-name">$actions</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$active_hook" title="details" class="var-name">$active_hook</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$allowed_prefs" title="details" class="var-name">$allowed_prefs</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$deprecated_hooks" title="details" class="var-name">$deprecated_hooks</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$dir" title="details" class="var-name">$dir</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$handlers" title="details" class="var-name">$handlers</a>
+				</div>
+																								<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$objectsmap" title="details" class="var-name">$objectsmap</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$output" title="details" class="var-name">$output</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$plugins" title="details" class="var-name">$plugins</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$task" title="details" class="var-name">$task</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$tasks" title="details" class="var-name">$tasks</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$template_contents" title="details" class="var-name">$template_contents</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$url" title="details" class="var-name">$url</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																												<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result"><a href="../../Framework/PluginAPI/rcube_plugin_api.html">rcube_plugin_api</a></span>
+										<a href="#get_instance" title="details" class="method-name">get_instance</a>
+										()
+									</div>
+																																																																																																																																												<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">rcube_plugin_api</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#add_content" title="details" class="method-name">add_content</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$html</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$container</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#exec_action" title="details" class="method-name">exec_action</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#exec_hook" title="details" class="method-name">exec_hook</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$hook</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$args</span> = <span class="var-default">array()</span>])
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#include_script" title="details" class="method-name">include_script</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fn</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#include_stylesheet" title="details" class="method-name">include_stylesheet</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fn</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#init" title="details" class="method-name">init</a>
+											(<span class="var-type"><a href="../../Framework/Core/rcube.html">object rcube</a></span>&nbsp;<span class="var-name">$app</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$task</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#is_plugin_task" title="details" class="method-name">is_plugin_task</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$task</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#is_processing" title="details" class="method-name">is_processing</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$hook</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#loaded_plugins" title="details" class="method-name">loaded_plugins</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#load_plugin" title="details" class="method-name">load_plugin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$plugin_name</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#load_plugins" title="details" class="method-name">load_plugins</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$plugins_enabled</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$required_plugins</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#register_action" title="details" class="method-name">register_action</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$owner</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$callback</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$task</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#register_handler" title="details" class="method-name">register_handler</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$owner</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$callback</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#register_hook" title="details" class="method-name">register_hook</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$hook</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$callback</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#register_task" title="details" class="method-name">register_task</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$task</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$owner</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#resource_url" title="details" class="method-name">resource_url</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fn</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#template_container_hook" title="details" class="method-name">template_container_hook</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$attrib</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#unregister_hook" title="details" class="method-name">unregister_hook</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$hook</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$callback</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$instance" id="$instance"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$instance</span>
+						(line <span class="line-number">32</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+
+<a name="var$actionmap" id="$actionmap"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$actionmap</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$actions" id="$actions"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$actions</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$active_hook" id="$active_hook"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$active_hook</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">47</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$allowed_prefs" id="$allowed_prefs"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$allowed_prefs</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$deprecated_hooks" id="$deprecated_hooks"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$deprecated_hooks</span>
+			 = <span class="var-default">array(<br />        'create_user'       =&gt; 'user_create',<br />        'kill_session'      =&gt; 'session_destroy',<br />        'upload_attachment' =&gt; 'attachment_upload',<br />        'save_attachment'   =&gt; 'attachment_save',<br />        'get_attachment'    =&gt; 'attachment_get',<br />        'cleanup_attachments' =&gt; 'attachments_cleanup',<br />        'display_attachment' =&gt; 'attachment_display',<br />        'remove_attachment' =&gt; 'attachment_delete',<br />        'outgoing_message_headers' =&gt; 'message_outgoing_headers',<br />        'outgoing_message_body' =&gt; 'message_outgoing_body',<br />        'address_sources'   =&gt; 'addressbooks_list',<br />        'get_address_book'  =&gt; 'addressbook_get',<br />        'create_contact'    =&gt; 'contact_create',<br />        'save_contact'      =&gt; 'contact_update',<br />        'contact_save'      =&gt; 'contact_update',<br />        'delete_contact'    =&gt; 'contact_delete',<br />        'manage_folders'    =&gt; 'folders_list',<br />        'list_mailboxes'    =&gt; 'mailboxes_list',<br />        'save_preferences'  =&gt; 'preferences_save',<br />        'user_preferences'  =&gt; 'preferences_list',<br />        'list_prefs_sections' =&gt; 'preferences_sections_list',<br />        'list_identities'   =&gt; 'identities_list',<br />        'create_identity'   =&gt; 'identity_create',<br />        'delete_identity'   =&gt; 'identity_delete',<br />        'save_identity'     =&gt; 'identity_update',<br />        'identity_save'     =&gt; 'identity_update',<br />        // to be removed after 0.8<br />        'imap_init'         =&gt; 'storage_init',<br />        'mailboxes_list'    =&gt; 'storage_folders',<br />        'imap_connect'      =&gt; 'storage_connect',<br />    )</span>			(line <span class="line-number">50</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$dir" id="$dir"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$dir</span>
+						(line <span class="line-number">34</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$handlers" id="$handlers"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$handlers</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$objectsmap" id="$objectsmap"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$objectsmap</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">45</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$output" id="$output"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$output</span>
+						(line <span class="line-number">37</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$plugins" id="$plugins"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$plugins</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">41</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$task" id="$task"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$task</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">36</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tasks" id="$tasks"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$tasks</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">42</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$template_contents" id="$template_contents"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$template_contents</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">46</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$url" id="$url"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$url</span>
+			 = <span class="var-default"> 'plugins/'</span>			(line <span class="line-number">35</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodget_instance" id="get_instance"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static get_instance</span> (line <span class="line-number">88</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This implements the 'singleton' design pattern</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The one and only instance if this class</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/PluginAPI/rcube_plugin_api.html">rcube_plugin_api</a></span>
+		<span class="method-name">
+			get_instance
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">100</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Private constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">rcube_plugin_api</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadd_content" id="add_content"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">add_content</span> (line <span class="line-number">470</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Save the given HTML content to be added to a template container</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_content
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$html</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$container</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$html</span><span class="var-description">: HTML content</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$container</span><span class="var-description">: Template container identifier</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodexec_action" id="exec_action"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">exec_action</span> (line <span class="line-number">337</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method handles requests like _task=mail&amp;_action=plugin.foo  It executes the callback function that was registered with the given action.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			exec_action
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$action</span><span class="var-description">: Action name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodexec_hook" id="exec_hook"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">exec_hook</span> (line <span class="line-number">278</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Triggers a plugin hook.</p>
+<p class="description"><p>This is called from the application and executes all registered handlers</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The (probably) altered hook arguments</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			exec_hook
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$hook</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$args</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$hook</span><span class="var-description">: Hook name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$args</span><span class="var-description">: Named arguments (key-&gt;value pairs)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinclude_script" id="include_script"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">include_script</span> (line <span class="line-number">442</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Include a plugin script file in the current HTML page</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			include_script
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fn</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fn</span><span class="var-description">: Path to script</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinclude_stylesheet" id="include_stylesheet"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">include_stylesheet</span> (line <span class="line-number">456</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Include a plugin stylesheet in the current HTML page</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			include_stylesheet
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fn</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fn</span><span class="var-description">: Path to stylesheet</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinit" id="init"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">init</span> (line <span class="line-number">114</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initialize plugin engine</p>
+<p class="description"><p>This has to be done after rcmail::load_gui() or rcmail::json_init()  was called because plugins need to have access to rcmail-&gt;output</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			init
+		</span>
+					(<span class="var-type"><a href="../../Framework/Core/rcube.html">object rcube</a></span>&nbsp;<span class="var-name">$app</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$task</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Framework/Core/rcube.html">object rcube</a></span>
+				<span class="var-name">$app</span><span class="var-description">: Instance of the rcube base class</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$task</span><span class="var-description">: Current application task (used for conditional plugin loading)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_plugin_task" id="is_plugin_task"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">is_plugin_task</span> (line <span class="line-number">419</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether the given task is registered by a plugin</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if registered, otherwise false</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_plugin_task
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$task</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$task</span><span class="var-description">: Task name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_processing" id="is_processing"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">is_processing</span> (line <span class="line-number">432</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if a plugin hook is currently processing.</p>
+<p class="description"><p>Mainly used to prevent loops and recursion.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if any/the given hook is currently processed, otherwise false</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_processing
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$hook</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$hook</span><span class="var-description">: Hook to check (optional)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodloaded_plugins" id="loaded_plugins"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">loaded_plugins</span> (line <span class="line-number">480</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns list of loaded plugins names</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of plugin names</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			loaded_plugins
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodload_plugin" id="load_plugin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">load_plugin</span> (line <span class="line-number">173</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load the specified plugin</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, false if not loaded or failure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			load_plugin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$plugin_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$plugin_name</span><span class="var-description">: Plugin name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodload_plugins" id="load_plugins"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">load_plugins</span> (line <span class="line-number">135</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load and init all enabled plugins</p>
+<p class="description"><p>This has to be done after rcmail::load_gui() or rcmail::json_init()  was called because plugins need to have access to rcmail-&gt;output</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			load_plugins
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$plugins_enabled</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$required_plugins</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$plugins_enabled</span><span class="var-description">: List of configured plugins to load</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$required_plugins</span><span class="var-description">: List of plugins required by the application</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodregister_action" id="register_action"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">register_action</span> (line <span class="line-number">310</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Let a plugin register a handler for a specific request</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			register_action
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$owner</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$callback</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$task</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$action</span><span class="var-description">: Action name (_task=mail&amp;_action=plugin.foo)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$owner</span><span class="var-description">: Plugin name that registers this action</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$callback</span><span class="var-description">: Callback: string with global function name or array($obj, 'methodname')</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$task</span><span class="var-description">: Task name registered by this plugin</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodregister_handler" id="register_handler"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">register_handler</span> (line <span class="line-number">356</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Register a handler function for template objects</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			register_handler
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$owner</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$callback</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Object name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$owner</span><span class="var-description">: Plugin name that registers this action</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$callback</span><span class="var-description">: Callback: string with global function name or array($obj, 'methodname')</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodregister_hook" id="register_hook"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">register_hook</span> (line <span class="line-number">236</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Allows a plugin object to register a callback for a certain hook</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			register_hook
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$hook</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$callback</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$hook</span><span class="var-description">: Hook name</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$callback</span><span class="var-description">: String with global function name or array($obj, 'methodname')</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodregister_task" id="register_task"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">register_task</span> (line <span class="line-number">384</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Register this plugin to be responsible for a specific task</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			register_task
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$task</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$owner</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$task</span><span class="var-description">: Task name (only characters [a-z0-9_.-] are allowed)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$owner</span><span class="var-description">: Plugin name that registers this action</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodresource_url" id="resource_url"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">resource_url</span> (line <span class="line-number">503</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Make the given file name link into the plugins directory</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			resource_url
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fn</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fn</span><span class="var-description">: Filename</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodtemplate_container_hook" id="template_container_hook"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">template_container_hook</span> (line <span class="line-number">491</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Callback for template_container hooks</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			template_container_hook
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$attrib</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$attrib</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunregister_hook" id="unregister_hook"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">unregister_hook</span> (line <span class="line-number">261</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Allow a plugin object to unregister a callback.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			unregister_hook
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$hook</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$callback</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$hook</span><span class="var-description">: Hook name</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$callback</span><span class="var-description">: String with global function name or array($obj, 'methodname')</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 06 Sep 2013 14:21:18 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

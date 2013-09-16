@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class rcube_mime</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> rcube_mime</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class for parsing MIME messages</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Thomas Bruederli &lt;<a href="mailto:roundcube@gmail.com">roundcube@gmail.com</a>&gt;</li>
+				<li><span class="field">author:</span> Aleksander Machniak &lt;<a href="mailto:alec@alec.pl">alec@alec.pl</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_rcube_mime.php.html">/rcube_mime.php</a> (line <span class="field">29</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																				<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#decode" title="details" class="method-name">decode</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encoding</span> = <span class="var-default">'7bit'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">array</span>
+										<a href="#decode_address_list" title="details" class="method-name">decode_address_list</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$decode</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$fallback</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$addronly</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#decode_header" title="details" class="method-name">decode_header</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$fallback</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#decode_mime_string" title="details" class="method-name">decode_mime_string</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$fallback</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">array</span>
+										<a href="#explode_header_string" title="details" class="method-name">explode_header_string</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$separator</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$remove_comments</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#file_content_type" title="details" class="method-name">file_content_type</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$failover</span> = <span class="var-default">'application/octet-stream'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$is_stream</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$skip_suffix</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#format_flowed" title="details" class="method-name">format_flowed</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$length</span> = <span class="var-default">72</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#get_charset" title="details" class="method-name">get_charset</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">array</span>
+										<a href="#get_mime_extensions" title="details" class="method-name">get_mime_extensions</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#image_content_type" title="details" class="method-name">image_content_type</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#parse_headers" title="details" class="method-name">parse_headers</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$headers</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result"><a href="../../Framework/Storage/rcube_message_part.html">object rcube_message_part</a></span>
+										<a href="#parse_message" title="details" class="method-name">parse_message</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$raw_body</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#unfold_flowed" title="details" class="method-name">unfold_flowed</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#wordwrap" title="details" class="method-name">wordwrap</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$width</span> = <span class="var-default">75</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$break</span> = <span class="var-default">&quot;\n&quot;</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$cut</span> = <span class="var-default">false</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$wrap_quoted</span> = <span class="var-default">true</span>])
+									</div>
+																				<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">rcube_mime</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$default_charset</span> = <span class="var-default">null</span>])
+									</div>
+																																																																																																																											</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methoddecode" id="decode"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static decode</span> (line <span class="line-number">293</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Decode a mime part</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Decoded string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			decode
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$encoding</span> = <span class="var-default">'7bit'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$input</span><span class="var-description">: Input string</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encoding</span><span class="var-description">: Part encoding</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddecode_address_list" id="decode_address_list"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static decode_address_list</span> (line <span class="line-number">134</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Split an address list into a structured array list</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Indexed list of addresses</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			decode_address_list
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$decode</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$fallback</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$addronly</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$input</span><span class="var-description">: Input string</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$max</span><span class="var-description">: List only this number of addresses</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$decode</span><span class="var-description">: Decode address strings</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fallback</span><span class="var-description">: Fallback charset if none specified</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$addronly</span><span class="var-description">: Return flat array with e-mail addresses only</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddecode_header" id="decode_header"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static decode_header</span> (line <span class="line-number">181</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Decode a message header value</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Decoded string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			decode_header
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$fallback</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$input</span><span class="var-description">: Header value</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fallback</span><span class="var-description">: Fallback charset if none specified</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddecode_mime_string" id="decode_mime_string"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static decode_mime_string</span> (line <span class="line-number">197</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Decode a mime-encoded string to internal charset</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Decoded string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			decode_mime_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$fallback</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$input</span><span class="var-description">: Header value</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fallback</span><span class="var-description">: Fallback charset if none specified</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodexplode_header_string" id="explode_header_string"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static explode_header_string</span> (line <span class="line-number">408</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Explodes header (e.g. address-list) string into array of strings  using specified separator characters with proper handling  of quoted-strings and comments (RFC2822)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Header items</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			explode_header_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$separator</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$remove_comments</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$separator</span><span class="var-description">: String containing separator characters</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Header string</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$remove_comments</span><span class="var-description">: Enable to remove comments</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfile_content_type" id="file_content_type"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static file_content_type</span> (line <span class="line-number">709</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A method to guess the mime_type of an attachment.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Till Klampaeckel &lt;<a href="mailto:till@php.net">till@php.net</a>&gt;</li>
+				<li><span class="field">see:</span> <a href="http://de2.php.net/mime_content_type">http://de2.php.net/mime_content_type</a></li>
+				<li><span class="field">see:</span> <a href="http://de2.php.net/manual/en/ref.fileinfo.php">http://de2.php.net/manual/en/ref.fileinfo.php</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			file_content_type
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$failover</span> = <span class="var-default">'application/octet-stream'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$is_stream</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$skip_suffix</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span><span class="var-description">: Path to the file or file contents</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: File name (with suffix)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$failover</span><span class="var-description">: Mime type supplied for failover</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$is_stream</span><span class="var-description">: Set to True if $path contains file contents</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$skip_suffix</span><span class="var-description">: Set to True if the config/mimetypes.php mappig should be ignored</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodformat_flowed" id="format_flowed"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static format_flowed</span> (line <span class="line-number">546</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Wrap the given text to comply with RFC 2646</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Wrapped text</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			format_flowed
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$length</span> = <span class="var-default">72</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$text</span><span class="var-description">: Text to wrap</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$length</span><span class="var-description">: Length</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$charset</span><span class="var-description">: Character encoding of $text</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_charset" id="get_charset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static get_charset</span> (line <span class="line-number">48</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns message/object character set name</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Characted set name</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_charset
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_mime_extensions" id="get_mime_extensions"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static get_mime_extensions</span> (line <span class="line-number">767</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get mimetype =&gt; file extension mapping</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of extensions matching the given mimetype or a hash array with ext -&gt; mimetype mappings if $mimetype is not given</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_mime_extensions
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mimetype</span><span class="var-description">: Mime-Type to get extensions for</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodimage_content_type" id="image_content_type"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static image_content_type</span> (line <span class="line-number">863</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Detect image type of the given binary data by checking magic numbers.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Detected mime-type or jpeg as fallback</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			image_content_type
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$data</span><span class="var-description">: Binary file content</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodparse_headers" id="parse_headers"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static parse_headers</span> (line <span class="line-number">316</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Split RFC822 header string into an associative array</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			parse_headers
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$headers</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$headers</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodparse_message" id="parse_message"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static parse_message</span> (line <span class="line-number">71</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse the given raw message source and return a structure  of rcube_message_part objects.</p>
+<p class="description"><p>It makes use of the PEAR:Mail_mimeDecode library</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The message structure</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Storage/rcube_message_part.html">object rcube_message_part</a></span>
+		<span class="method-name">
+			parse_message
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$raw_body</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$raw_body</span><span class="var-description">: The message source</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunfold_flowed" id="unfold_flowed"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static unfold_flowed</span> (line <span class="line-number">479</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Interpret a format=flowed message body according to RFC 2646</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Interpreted text with unwrapped lines and stuffed space removed</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			unfold_flowed
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$text</span><span class="var-description">: Raw body formatted as flowed text</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodwordwrap" id="wordwrap"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static wordwrap</span> (line <span class="line-number">588</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Improved wordwrap function with multibyte support.</p>
+<p class="description"><p>The code is based on Zend_Text_MultiByte::wordWrap().</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Text</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			wordwrap
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$width</span> = <span class="var-default">75</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$break</span> = <span class="var-default">&quot;\n&quot;</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$cut</span> = <span class="var-default">false</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$wrap_quoted</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$string</span><span class="var-description">: Text to wrap</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$width</span><span class="var-description">: Line width</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$break</span><span class="var-description">: Line separator</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$cut</span><span class="var-description">: Enable to cut word</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$charset</span><span class="var-description">: Charset of $string</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$wrap_quoted</span><span class="var-description">: When enabled quoted lines will not be wrapped</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">37</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Object constructor.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">rcube_mime</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$default_charset</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$default_charset</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 06 Sep 2013 14:21:17 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

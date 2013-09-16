@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class rcube_charset</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> rcube_charset</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Character sets conversion functionality</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Thomas Bruederli &lt;<a href="mailto:roundcube@gmail.com">roundcube@gmail.com</a>&gt;</li>
+				<li><span class="field">author:</span> Aleksander Machniak &lt;<a href="mailto:alec@alec.pl">alec@alec.pl</a>&gt;</li>
+				<li><span class="field">author:</span> Edmund Grimley Evans &lt;<a href="mailto:edmundo@rano.org">edmundo@rano.org</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_rcube_charset.php.html">/rcube_charset.php</a> (line <span class="field">31</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+												<div class="var-title">
+					<img src="../../media/images/StaticVariable.png" alt=" " />
+					static <span class="var-type">mixed</span>
+					<a href="#$aliases" title="details" class="var-name">$aliases</a>
+				</div>
+																							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">mixed</span>
+										<a href="#clean" title="details" class="method-name">clean</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$input</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#convert" title="details" class="method-name">convert</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$from</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$to</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#detect" title="details" class="method-name">detect</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$failover</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$language</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#error_handler" title="details" class="method-name">error_handler</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$errno</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$errstr</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#parse_charset" title="details" class="method-name">parse_charset</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#utf7imap_to_utf8" title="details" class="method-name">utf7imap_to_utf8</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#utf7_to_utf8" title="details" class="method-name">utf7_to_utf8</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#utf8_to_utf7imap" title="details" class="method-name">utf8_to_utf7imap</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#utf16_to_utf8" title="details" class="method-name">utf16_to_utf8</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																																																																																							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$aliases" id="$aliases"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			static <span class="var-type">mixed</span>
+			<span class="var-name">$aliases</span>
+			 = <span class="var-default">array(<br />        'USASCII'       =&gt; 'WINDOWS-1252',<br />        'ANSIX31101983' =&gt; 'WINDOWS-1252',<br />        'ANSIX341968'   =&gt; 'WINDOWS-1252',<br />        'UNKNOWN8BIT'   =&gt; 'ISO-8859-15',<br />        'UNKNOWN'       =&gt; 'ISO-8859-15',<br />        'USERDEFINED'   =&gt; 'ISO-8859-15',<br />        'KSC56011987'   =&gt; 'EUC-KR',<br />        'GB2312'        =&gt; 'GBK',<br />        'GB231280'      =&gt; 'GBK',<br />        'UNICODE'       =&gt; 'UTF-8',<br />        'UTF7IMAP'      =&gt; 'UTF7-IMAP',<br />        'TIS620'        =&gt; 'WINDOWS-874',<br />        'ISO88599'      =&gt; 'WINDOWS-1254',<br />        'ISO885911'     =&gt; 'WINDOWS-874',<br />        'MACROMAN'      =&gt; 'MACINTOSH',<br />        '77'            =&gt; 'MAC',<br />        '128'           =&gt; 'SHIFT-JIS',<br />        '129'           =&gt; 'CP949',<br />        '130'           =&gt; 'CP1361',<br />        '134'           =&gt; 'GBK',<br />        '136'           =&gt; 'BIG5',<br />        '161'           =&gt; 'WINDOWS-1253',<br />        '162'           =&gt; 'WINDOWS-1254',<br />        '163'           =&gt; 'WINDOWS-1258',<br />        '177'           =&gt; 'WINDOWS-1255',<br />        '178'           =&gt; 'WINDOWS-1256',<br />        '186'           =&gt; 'WINDOWS-1257',<br />        '204'           =&gt; 'WINDOWS-1251',<br />        '222'           =&gt; 'WINDOWS-874',<br />        '238'           =&gt; 'WINDOWS-1250',<br />        'MS950'         =&gt; 'CP950',<br />        'WINDOWS949'    =&gt; 'UHC',<br />    )</span>			(line <span class="line-number">34</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodclean" id="clean"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static clean</span> (line <span class="line-number">740</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes non-unicode characters from input.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> String or array</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			clean
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$input</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$input</span><span class="var-description">: String or array.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconvert" id="convert"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static convert</span> (line <span class="line-number">173</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Convert a string from one charset to another.</p>
+<p class="description"><p>Uses mbstring and iconv functions if possible</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Converted string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			convert
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$from</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$to</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$from</span><span class="var-description">: Suspected charset of the input string</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$to</span><span class="var-description">: Target charset to convert to; defaults to RCUBE_CHARSET</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddetect" id="detect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static detect</span> (line <span class="line-number">655</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A method to guess character set of a string.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Charset name</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			detect
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$failover</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$language</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$string</span><span class="var-description">: String</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$failover</span><span class="var-description">: Default result for failover</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$language</span><span class="var-description">: User language</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoderror_handler" id="error_handler"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static error_handler</span> (line <span class="line-number">76</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Catch an error and throw an exception.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			error_handler
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$errno</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$errstr</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$errno</span><span class="var-description">: Level of the error</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$errstr</span><span class="var-description">: Error message</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodparse_charset" id="parse_charset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static parse_charset</span> (line <span class="line-number">91</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse and validate charset name string (see #1485758).</p>
+<p class="description"><p>Sometimes charset string is malformed, there are also charset aliases  but we need strict names for charset conversion (specially utf8 class)</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The validated charset name</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			parse_charset
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$input</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$input</span><span class="var-description">: Input charset name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodutf7imap_to_utf8" id="utf7imap_to_utf8"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static utf7imap_to_utf8</span> (line <span class="line-number">420</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Convert the data ($str) from RFC 2060's UTF-7 to UTF-8.</p>
+<p class="description"><p>If input data is invalid, return the original input string.  RFC 2060 obviously intends the encoding to be unique (see  point 5 in section 5.1.3), so we reject any non-canonical  form, such as &amp;ACY- (instead of &amp;-) or &amp;AMA-&amp;AMA- (instead  of &amp;AMAAwA-).</p><p>Translated from C to PHP by Thomas Bruederli &lt;roundcube@gmail.com&gt;</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Output string (UTF-8)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			utf7imap_to_utf8
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string (UTF7-IMAP)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodutf7_to_utf8" id="utf7_to_utf8"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static utf7_to_utf8</span> (line <span class="line-number">321</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Converts string from standard UTF-7 (RFC 2152) to UTF-8.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Converted string (UTF-8)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			utf7_to_utf8
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string (UTF-7)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodutf8_to_utf7imap" id="utf8_to_utf7imap"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static utf8_to_utf7imap</span> (line <span class="line-number">526</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Convert the data ($str) from UTF-8 to RFC 2060's UTF-7.</p>
+<p class="description"><p>Unicode characters above U+FFFF are replaced by U+FFFE.  If input data is invalid, return an empty string.</p><p>Translated from C to PHP by Thomas Bruederli &lt;roundcube@gmail.com&gt;</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Output string (UTF7-IMAP)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			utf8_to_utf7imap
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string (UTF-8)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodutf16_to_utf8" id="utf16_to_utf8"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static utf16_to_utf8</span> (line <span class="line-number">381</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Converts string from UTF-16 to UTF-8 (helper for utf-7 to utf-8 conversion)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The converted string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			utf16_to_utf8
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 06 Sep 2013 14:21:11 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

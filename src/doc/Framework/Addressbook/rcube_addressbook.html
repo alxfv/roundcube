@@ -1,0 +1,2484 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class rcube_addressbook</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/AbstractClass_logo.png"
+														alt="Abstract Class"
+														title="Abstract Class"
+														style="vertical-align: middle"> rcube_addressbook</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Abstract skeleton of an address book/repository</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_rcube_addressbook.php.html">/rcube_addressbook.php</a> (line <span class="field">26</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../Framework/Addressbook/rcube_contacts.html">rcube_contacts</a>
+					</td>
+					<td>
+											Model class for the local address book database
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../Framework/Addressbook/rcube_ldap.html">rcube_ldap</a>
+					</td>
+					<td>
+											Model class to access an LDAP address directory
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#ERROR_NO_CONNECTION" title="details" class="const-name">ERROR_NO_CONNECTION</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#ERROR_READ_ONLY" title="details" class="const-name">ERROR_READ_ONLY</a> = 					<span class="var-type"> 1</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#ERROR_SAVING" title="details" class="const-name">ERROR_SAVING</a> = 					<span class="var-type"> 4</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#ERROR_SEARCH" title="details" class="const-name">ERROR_SEARCH</a> = 					<span class="var-type"> 5</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#ERROR_VALIDATE" title="details" class="const-name">ERROR_VALIDATE</a> = 					<span class="var-type"> 3</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$coltypes" title="details" class="var-name">$coltypes</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$date_cols" title="details" class="var-name">$date_cols</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$error" title="details" class="var-name">$error</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$groups" title="details" class="var-name">$groups</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$group_id" title="details" class="var-name">$group_id</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$list_page" title="details" class="var-name">$list_page</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$page_size" title="details" class="var-name">$page_size</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$primary_key" title="details" class="var-name">$primary_key</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$readonly" title="details" class="var-name">$readonly</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$ready" title="details" class="var-name">$ready</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$searchonly" title="details" class="var-name">$searchonly</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$sort_col" title="details" class="var-name">$sort_col</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$sort_order" title="details" class="var-name">$sort_order</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$undelete" title="details" class="var-name">$undelete</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																				<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#compose_contact_key" title="details" class="method-name">compose_contact_key</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$contact</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$sort_col</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#compose_display_name" title="details" class="method-name">compose_display_name</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$contact</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$full_email</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#compose_list_name" title="details" class="method-name">compose_list_name</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$contact</span>)
+									</div>
+																																																																																																																																																								<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#normalize_string" title="details" class="method-name">normalize_string</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																																																																																																																																				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#add_to_group" title="details" class="method-name">add_to_group</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$group_id</span>, <span class="var-type">array|string</span>&nbsp;<span class="var-name">$ids</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#close" title="details" class="method-name">close</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#compare_search_value" title="details" class="method-name">compare_search_value</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$colname</span>, <span class="var-type">string|array</span>&nbsp;<span class="var-name">$value</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$search</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span>)
+									</div>
+																																								<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Addressbook/rcube_result_set.html">rcube_result_set</a></span>
+										<a href="#count" title="details" class="method-name">count</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#create_group" title="details" class="method-name">create_group</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#delete" title="details" class="method-name">delete</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$ids</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#delete_all" title="details" class="method-name">delete_all</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#delete_group" title="details" class="method-name">delete_group</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$gid</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#get_col_values" title="details" class="method-name">get_col_values</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$col</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flat</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#get_error" title="details" class="method-name">get_error</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#get_group" title="details" class="method-name">get_group</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$group_id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#get_name" title="details" class="method-name">get_name</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#get_record" title="details" class="method-name">get_record</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$assoc</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#get_record_groups" title="details" class="method-name">get_record_groups</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Addressbook/rcube_result_set.html">rcube_result_set</a></span>
+										<a href="#get_result" title="details" class="method-name">get_result</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#get_search_set" title="details" class="method-name">get_search_set</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#insert" title="details" class="method-name">insert</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$save_data</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$check</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#insertMultiple" title="details" class="method-name">insertMultiple</a>
+											(<span class="var-type"><a href="../../Framework/Addressbook/rcube_result_set.html">object rcube_result_set</a></span>&nbsp;<span class="var-name">$recset</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$check</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#list_groups" title="details" class="method-name">list_groups</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$search</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#list_records" title="details" class="method-name">list_records</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$cols</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$subset</span> = <span class="var-default">0</span>])
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#refresh_search" title="details" class="method-name">refresh_search</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#remove_from_group" title="details" class="method-name">remove_from_group</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$group_id</span>, <span class="var-type">array|string</span>&nbsp;<span class="var-name">$ids</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#rename_group" title="details" class="method-name">rename_group</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$gid</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$newname</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$newid</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#reset" title="details" class="method-name">reset</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Addressbook/rcube_result_set.html">object rcube_result_set</a></span>
+										<a href="#search" title="details" class="method-name">search</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$fields</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$select</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$nocount</span> = <span class="var-default">false</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_error" title="details" class="method-name">set_error</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_group" title="details" class="method-name">set_group</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$gid</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_page" title="details" class="method-name">set_page</a>
+											(<span class="var-type">number</span>&nbsp;<span class="var-name">$page</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_pagesize" title="details" class="method-name">set_pagesize</a>
+											(<span class="var-type">number</span>&nbsp;<span class="var-name">$size</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_search_set" title="details" class="method-name">set_search_set</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$filter</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_sort_order" title="details" class="method-name">set_sort_order</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_col</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_order</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#undelete" title="details" class="method-name">undelete</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$ids</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#update" title="details" class="method-name">update</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$save_cols</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#validate" title="details" class="method-name">validate</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">&$save_data</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autofix</span> = <span class="var-default">false</span>])
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$coltypes" id="$coltypes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$coltypes</span>
+			 = <span class="var-default">array('name' =&gt; array('limit'=&gt;1),'firstname'=&gt;array('limit'=&gt;1),'surname'=&gt;array('limit'=&gt;1),'email'=&gt;array('limit'=&gt;1))</span>			(line <span class="line-number">47</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$coltypes">rcube_contacts::$coltypes</a>
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#var$coltypes">rcube_ldap::$coltypes</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$date_cols" id="$date_cols"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$date_cols</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">48</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$date_cols">rcube_contacts::$date_cols</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$error" id="$error"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$error</span>
+						(line <span class="line-number">50</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$groups" id="$groups"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$groups</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">37</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$groups">rcube_contacts::$groups</a>
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#var$groups">rcube_ldap::$groups</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$group_id" id="$group_id"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$group_id</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">42</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$group_id">rcube_contacts::$group_id</a>
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#var$group_id">rcube_ldap::$group_id</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$list_page" id="$list_page"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$list_page</span>
+			 = <span class="var-default"> 1</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$list_page">rcube_contacts::$list_page</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$page_size" id="$page_size"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$page_size</span>
+			 = <span class="var-default"> 10</span>			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$page_size">rcube_contacts::$page_size</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$primary_key" id="$primary_key"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$primary_key</span>
+						(line <span class="line-number">36</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">public properties (mandatory)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$primary_key">rcube_contacts::$primary_key</a>
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#var$primary_key">rcube_ldap::$primary_key</a>
+								: public properties
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$readonly" id="$readonly"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$readonly</span>
+			 = <span class="var-default"> true</span>			(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$readonly">rcube_contacts::$readonly</a>
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#var$readonly">rcube_ldap::$readonly</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$ready" id="$ready"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$ready</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">41</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$ready">rcube_contacts::$ready</a>
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#var$ready">rcube_ldap::$ready</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$searchonly" id="$searchonly"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$searchonly</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sort_col" id="$sort_col"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$sort_col</span>
+			 = <span class="var-default"> 'name'</span>			(line <span class="line-number">45</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sort_order" id="$sort_order"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$sort_order</span>
+			 = <span class="var-default"> 'ASC'</span>			(line <span class="line-number">46</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$undelete" id="$undelete"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$undelete</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">40</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#var$undelete">rcube_contacts::$undelete</a>
+							</li>
+				</ul>
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodcompose_contact_key" id="compose_contact_key"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static compose_contact_key</span> (line <span class="line-number">536</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a unique key for sorting contacts</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			compose_contact_key
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$contact</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$sort_col</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$contact</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sort_col</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcompose_display_name" id="compose_display_name"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static compose_display_name</span> (line <span class="line-number">470</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compose a valid display name from the given structured contact data</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Display name</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			compose_display_name
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$contact</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$full_email</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$contact</span><span class="var-description">: Hash array with contact data as key-value pairs</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$full_email</span><span class="var-description">: Don't attempt to extract components from the email address</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcompose_list_name" id="compose_list_name"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static compose_list_name</span> (line <span class="line-number">503</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compose the name to display in the contacts list for the given contact record.</p>
+<p class="description"><p>This respects the settings parameter how to list conacts.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List name</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			compose_list_name
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$contact</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$contact</span><span class="var-description">: Hash array with contact data as key-value pairs</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnormalize_string" id="normalize_string"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static normalize_string</span> (line <span class="line-number">457</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Normalize the given string for fulltext search.</p>
+<p class="description"><p>Currently only optimized for Latin-1 characters; to be extended</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Normalized string</li>
+				<li><span class="field">deprecated:</span> since 0.9-beta</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			normalize_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string (UTF-8)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_to_group" id="add_to_group"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">add_to_group</span> (line <span class="line-number">383</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add the given contact records the a certain group</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Number of contacts added</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			add_to_group
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$group_id</span>, <span class="var-type">array|string</span>&nbsp;<span class="var-name">$ids</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$group_id</span><span class="var-description">: Group identifier</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$ids</span><span class="var-description">: List of contact identifiers to be added</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodadd_to_group">rcube_contacts::add_to_group()</a>
+								: Add the given contact records the a certain group
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodadd_to_group">rcube_ldap::add_to_group()</a>
+								: Add the given contact records the a certain group
+							</li>
+				</ul>
+	</div>
+<a name="methodclose" id="close"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">close</span> (line <span class="line-number">160</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Close connection to source</p>
+<p class="description"><p>Called on script shutdown</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			close
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodclose">rcube_ldap::close()</a>
+								: Close connection to LDAP server
+							</li>
+				</ul>
+	</div>
+<a name="methodcompare_search_value" id="compare_search_value"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">compare_search_value</span> (line <span class="line-number">558</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compare search value with contact data</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Comparision result</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			compare_search_value
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$colname</span>, <span class="var-type">string|array</span>&nbsp;<span class="var-name">$value</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$search</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$colname</span><span class="var-description">: Data name</span>			</li>
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$value</span><span class="var-description">: Data value</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$search</span><span class="var-description">: Search value</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$mode</span><span class="var-description">: Search mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcount" id="count"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">count</span> (line <span class="line-number">116</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Count number of available contacts in database</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Result set with values for 'count' and 'first'</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Addressbook/rcube_result_set.html">rcube_result_set</a></span>
+		<span class="method-name">
+			count
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodcount">rcube_contacts::count()</a>
+								: Count number of available contacts in database
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodcount">rcube_ldap::count()</a>
+								: Count number of available contacts in database
+							</li>
+				</ul>
+	</div>
+<a name="methodcreate_group" id="create_group"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">create_group</span> (line <span class="line-number">343</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a contact group with the given name</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> False on error, array with record props in success</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			create_group
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The group name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodcreate_group">rcube_contacts::create_group()</a>
+								: Create a contact group with the given name
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodcreate_group">rcube_ldap::create_group()</a>
+								: Create a contact group with the given name
+							</li>
+				</ul>
+	</div>
+<a name="methoddelete" id="delete"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">delete</span> (line <span class="line-number">279</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Mark one or more contact records as deleted</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			delete
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$ids</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$ids</span><span class="var-description">: Record identifiers</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$force</span><span class="var-description">: Remove records irreversible (see self::undelete)</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methoddelete">rcube_contacts::delete()</a>
+								: Mark one or more contact records as deleted
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methoddelete">rcube_ldap::delete()</a>
+								: Mark one or more contact records as deleted
+							</li>
+				</ul>
+	</div>
+<a name="methoddelete_all" id="delete_all"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">delete_all</span> (line <span class="line-number">297</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Mark all records in database as deleted</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			delete_all
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methoddelete_all">rcube_contacts::delete_all()</a>
+								: Remove all records from the database
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methoddelete_all">rcube_ldap::delete_all()</a>
+								: Remove all contact records
+							</li>
+				</ul>
+	</div>
+<a name="methoddelete_group" id="delete_group"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">delete_group</span> (line <span class="line-number">355</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Delete the given group and all linked group members</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, false if no data was changed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			delete_group
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$gid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$gid</span><span class="var-description">: Group identifier</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methoddelete_group">rcube_contacts::delete_group()</a>
+								: Delete the given group (and all linked group members)
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methoddelete_group">rcube_ldap::delete_group()</a>
+								: Delete the given group and all linked group members
+							</li>
+				</ul>
+	</div>
+<a name="methodget_col_values" id="get_col_values"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_col_values</span> (line <span class="line-number">426</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Utility function to return all values of a certain data column  either as flat list or grouped by subtype</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of column values</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_col_values
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$col</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flat</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$col</span><span class="var-description">: Col name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$data</span><span class="var-description">: Record data array as used for saving</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flat</span><span class="var-description">: True to return one array with all values, False for hash array with values grouped by type</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_error" id="get_error"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_error</span> (line <span class="line-number">140</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the last error occured (e.g. when updating/inserting failed)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Hash array with the following fields: type, message</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_error
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_group" id="get_group"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_group</span> (line <span class="line-number">331</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get group properties such as name and email address(es)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Group properties as hash array</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_group
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$group_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$group_id</span><span class="var-description">: Group identifier</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodget_group">rcube_contacts::get_group()</a>
+								: Get group properties such as name and email address(es)
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodget_group">rcube_ldap::get_group()</a>
+								: Get group properties such as name and email address(es)
+							</li>
+				</ul>
+	</div>
+<a name="methodget_name" id="get_name"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_name</span> (line <span class="line-number">55</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns addressbook name (e.g. for addressbooks listing)</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_name
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodget_name">rcube_contacts::get_name()</a>
+								: Returns addressbook name
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodget_name">rcube_ldap::get_name()</a>
+								: Returns address book name
+							</li>
+				</ul>
+	</div>
+<a name="methodget_record" id="get_record"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_record</span> (line <span class="line-number">133</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a specific contact record</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Result object with all record fields or False if not found</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get_record
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$id</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$assoc</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$id</span><span class="var-description">: record identifier(s)</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$assoc</span><span class="var-description">: True to return record as associative array, otherwise a result set is returned</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodget_record">rcube_contacts::get_record()</a>
+								: Get a specific contact record
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodget_record">rcube_ldap::get_record()</a>
+								: Get a specific contact record
+							</li>
+				</ul>
+	</div>
+<a name="methodget_record_groups" id="get_record_groups"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_record_groups</span> (line <span class="line-number">411</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get group assignments of a specific contact record</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of assigned groups as ID=&gt;Name pairs</li>
+				<li><span class="field">since:</span> 0.5-beta</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_record_groups
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$id</span><span class="var-description">: Record identifier</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodget_record_groups">rcube_contacts::get_record_groups()</a>
+								: Get group assignments of a specific contact record
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodget_record_groups">rcube_ldap::get_record_groups()</a>
+								: Get group assignments of a specific contact record
+							</li>
+				</ul>
+	</div>
+<a name="methodget_result" id="get_result"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_result</span> (line <span class="line-number">123</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the last result set</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Current result set or NULL if nothing selected yet</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Addressbook/rcube_result_set.html">rcube_result_set</a></span>
+		<span class="method-name">
+			get_result
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodget_result">rcube_contacts::get_result()</a>
+								: Return the last result set
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodget_result">rcube_ldap::get_result()</a>
+								: Return the last result set
+							</li>
+				</ul>
+	</div>
+<a name="methodget_search_set" id="get_search_set"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_search_set</span> (line <span class="line-number">69</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for saved search properties</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Search properties used by this class</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get_search_set
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodget_search_set">rcube_contacts::get_search_set()</a>
+								: Getter for saved search properties
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodget_search_set">rcube_ldap::get_search_set()</a>
+								: Getter for saved search properties
+							</li>
+				</ul>
+	</div>
+<a name="methodinsert" id="insert"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">insert</span> (line <span class="line-number">235</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a new contact record</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The created record ID on success, False on error</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			insert
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$save_data</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$check</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$save_data</span><span class="var-description">: Assoziative array with save data   Keys:   Field name with optional section in the form FIELD:SECTION   Values: Field value. Can be either a string or an array of strings for multiple values</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$check</span><span class="var-description">: True to check for duplicates first</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodinsert">rcube_contacts::insert()</a>
+								: Create a new contact record
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodinsert">rcube_ldap::insert()</a>
+								: Create a new contact record
+							</li>
+				</ul>
+	</div>
+<a name="methodinsertMultiple" id="insertMultiple"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">insertMultiple</span> (line <span class="line-number">247</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create new contact records for every item in the record set</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of created record IDs</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			insertMultiple
+		</span>
+					(<span class="var-type"><a href="../../Framework/Addressbook/rcube_result_set.html">object rcube_result_set</a></span>&nbsp;<span class="var-name">$recset</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$check</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Framework/Addressbook/rcube_result_set.html">object rcube_result_set</a></span>
+				<span class="var-name">$recset</span><span class="var-description">: Recordset to insert</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$check</span><span class="var-description">: True to check for duplicates first</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlist_groups" id="list_groups"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">list_groups</span> (line <span class="line-number">319</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">List all active contact groups of this source</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Indexed list of contact groups, each a hash array</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			list_groups
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$search</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$search</span><span class="var-description">: Optional search string to match group name</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$mode</span><span class="var-description">: Matching mode: <ol><li>- partial (*abc*),</li><li>- strict (=),</li><li>- prefix (abc*)</li></ol></span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodlist_groups">rcube_contacts::list_groups()</a>
+								: List all active contact groups of this source
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodlist_groups">rcube_ldap::list_groups()</a>
+								: List all active contact groups of this source
+							</li>
+				</ul>
+	</div>
+<a name="methodlist_records" id="list_records"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">list_records</span> (line <span class="line-number">93</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">List the current set of contact records</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Indexed list of contact records, each a hash array</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			list_records
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$cols</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$subset</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$cols</span><span class="var-description">: List of cols to show</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$subset</span><span class="var-description">: Only return this number of records, use negative values for tail</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodlist_records">rcube_contacts::list_records()</a>
+								: List the current set of contact records
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodlist_records">rcube_ldap::list_records()</a>
+								: List the current set of contact records
+							</li>
+				</ul>
+	</div>
+<a name="methodrefresh_search" id="refresh_search"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">refresh_search</span> (line <span class="line-number">81</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Refresh saved search set after data has changed</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> New search set</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			refresh_search
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodremove_from_group" id="remove_from_group"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">remove_from_group</span> (line <span class="line-number">397</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove the given contact records from a certain group</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Number of deleted group members</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			remove_from_group
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$group_id</span>, <span class="var-type">array|string</span>&nbsp;<span class="var-name">$ids</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$group_id</span><span class="var-description">: Group identifier</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$ids</span><span class="var-description">: List of contact identifiers to be removed</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodremove_from_group">rcube_contacts::remove_from_group()</a>
+								: Remove the given contact records from a certain group
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodremove_from_group">rcube_ldap::remove_from_group()</a>
+								: Remove the given contact records from a certain group
+							</li>
+				</ul>
+	</div>
+<a name="methodrename_group" id="rename_group"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">rename_group</span> (line <span class="line-number">369</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Rename a specific contact group</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> New name on success, false if no data was changed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			rename_group
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$gid</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$newname</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">&$newid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$gid</span><span class="var-description">: Group identifier</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$newname</span><span class="var-description">: New name to set for this group</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$newid</span><span class="var-description">: New group identifier (if changed, otherwise don't set)</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodrename_group">rcube_contacts::rename_group()</a>
+								: Rename a specific contact group
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodrename_group">rcube_ldap::rename_group()</a>
+								: Rename a specific contact group
+							</li>
+				</ul>
+	</div>
+<a name="methodreset" id="reset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">reset</span> (line <span class="line-number">74</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reset saved results and search parameters</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			reset
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodreset">rcube_contacts::reset()</a>
+								: Reset all saved results and search parameters
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodreset">rcube_ldap::reset()</a>
+								: Reset all saved results and search parameters
+							</li>
+				</ul>
+	</div>
+<a name="methodsearch" id="search"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">search</span> (line <span class="line-number">109</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Search records</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of contact records and 'count' value</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Addressbook/rcube_result_set.html">object rcube_result_set</a></span>
+		<span class="method-name">
+			search
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$fields</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">0</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$select</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$nocount</span> = <span class="var-default">false</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$fields</span><span class="var-description">: List of fields to search in</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: Search value</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$mode</span><span class="var-description">: Matching mode: <ol><li>- partial (*abc*),</li><li>- strict (=),</li><li>- prefix (abc*)</li></ol></span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$select</span><span class="var-description">: True if results are requested, False if count only</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$nocount</span><span class="var-description">: True to skip the count query (select only)</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$required</span><span class="var-description">: List of fields that cannot be empty</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodsearch">rcube_contacts::search()</a>
+								: Search contacts
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodsearch">rcube_ldap::search()</a>
+								: Search contacts
+							</li>
+				</ul>
+	</div>
+<a name="methodset_error" id="set_error"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_error</span> (line <span class="line-number">151</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Setter for errors for internal use</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_error
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$type</span><span class="var-description">: Error type (one of this class' error constants)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$message</span><span class="var-description">: Error message (name of a text label)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_group" id="set_group"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_group</span> (line <span class="line-number">306</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Setter for the current group</p>
+<p class="description"><p>(empty, has to be re-implemented by extending class)</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_group
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$gid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$gid</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodset_group">rcube_contacts::set_group()</a>
+								: Setter for the current group
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodset_group">rcube_ldap::set_group()</a>
+								: Setter for the current group
+							</li>
+				</ul>
+	</div>
+<a name="methodset_page" id="set_page"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_page</span> (line <span class="line-number">168</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set internal list page</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_page
+		</span>
+					(<span class="var-type">number</span>&nbsp;<span class="var-name">$page</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">number</span>
+				<span class="var-name">$page</span><span class="var-description">: Page number to list</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_pagesize" id="set_pagesize"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_pagesize</span> (line <span class="line-number">179</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set internal page size</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_pagesize
+		</span>
+					(<span class="var-type">number</span>&nbsp;<span class="var-name">$size</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">number</span>
+				<span class="var-name">$size</span><span class="var-description">: Number of messages to display on one page</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_search_set" id="set_search_set"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">set_search_set</span> (line <span class="line-number">62</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Save a search string for future listings</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_search_set
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$filter</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$filter</span><span class="var-description">: Search params to use in listing method, obtained by get_search_set()</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodset_search_set">rcube_contacts::set_search_set()</a>
+								: Save a search string for future listings
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodset_search_set">rcube_ldap::set_search_set()</a>
+								: Save a search string for future listings
+							</li>
+				</ul>
+	</div>
+<a name="methodset_sort_order" id="set_sort_order"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_sort_order</span> (line <span class="line-number">190</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set internal sort settings</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_sort_order
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_col</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_order</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sort_col</span><span class="var-description">: Sort column</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sort_order</span><span class="var-description">: Sort order</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodset_sort_order">rcube_ldap::set_sort_order()</a>
+								: Set internal sort settings
+							</li>
+				</ul>
+	</div>
+<a name="methodundelete" id="undelete"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">undelete</span> (line <span class="line-number">289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unmark delete flag on contact record(s)</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			undelete
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$ids</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$ids</span><span class="var-description">: Record identifiers</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodundelete">rcube_contacts::undelete()</a>
+								: Undelete one or more contact records
+							</li>
+				</ul>
+	</div>
+<a name="methodupdate" id="update"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">update</span> (line <span class="line-number">268</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Update a specific contact record</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			update
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$save_cols</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$id</span><span class="var-description">: Record identifier</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$save_cols</span><span class="var-description">: Assoziative array with save data   Keys:   Field name with optional section in the form FIELD:SECTION   Values: Field value. Can be either a string or an array of strings for multiple values</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodupdate">rcube_contacts::update()</a>
+								: Update a specific contact record
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodupdate">rcube_ldap::update()</a>
+								: Update a specific contact record
+							</li>
+				</ul>
+	</div>
+<a name="methodvalidate" id="validate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">validate</span> (line <span class="line-number">208</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check the given data before saving.</p>
+<p class="description"><p>If input isn't valid, the message to display can be fetched using get_error()</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if input is valid, False if not.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			validate
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">&$save_data</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$autofix</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">&$save_data</span><span class="var-description">: Assoziative array with data to save</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$autofix</span><span class="var-description">: Attempt to fix/complete record automatically</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Addressbook/rcube_contacts.html#methodvalidate">rcube_contacts::validate()</a>
+								: Check the given data before saving.
+							</li>
+					<li>
+				<a href="../../Framework/Addressbook/rcube_ldap.html#methodvalidate">rcube_ldap::validate()</a>
+								: Check the given data before saving.
+							</li>
+				</ul>
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constERROR_NO_CONNECTION" id="ERROR_NO_CONNECTION"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ERROR_NO_CONNECTION</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">30</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constERROR_READ_ONLY" id="ERROR_READ_ONLY"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ERROR_READ_ONLY</span>
+			 = <span class="const-default"> 1</span>
+			(line <span class="line-number">29</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">constants for error reporting *</p>
+	
+	
+</div>
+<a name="constERROR_SAVING" id="ERROR_SAVING"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ERROR_SAVING</span>
+			 = <span class="const-default"> 4</span>
+			(line <span class="line-number">32</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constERROR_SEARCH" id="ERROR_SEARCH"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ERROR_SEARCH</span>
+			 = <span class="const-default"> 5</span>
+			(line <span class="line-number">33</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constERROR_VALIDATE" id="ERROR_VALIDATE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ERROR_VALIDATE</span>
+			 = <span class="const-default"> 3</span>
+			(line <span class="line-number">31</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 06 Sep 2013 14:21:11 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

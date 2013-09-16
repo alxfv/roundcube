@@ -1,0 +1,4128 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class rcube_storage</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/AbstractClass_logo.png"
+														alt="Abstract Class"
+														title="Abstract Class"
+														style="vertical-align: middle"> rcube_storage</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Abstract class for accessing mail messages storage server</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Aleksander Machniak &lt;<a href="mailto:alec@alec.pl">alec@alec.pl</a>&gt;</li>
+				<li><span class="field">author:</span> Thomas Bruederli &lt;<a href="mailto:roundcube@gmail.com">roundcube@gmail.com</a>&gt;</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_rcube_storage.php.html">/rcube_storage.php</a> (line <span class="field">29</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../Framework/Storage/rcube_imap.html">rcube_imap</a>
+					</td>
+					<td>
+											Interface class for accessing an IMAP server
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#ALREADYEXISTS" title="details" class="const-name">ALREADYEXISTS</a> = 					<span class="var-type"> 6</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#CONTACTADMIN" title="details" class="const-name">CONTACTADMIN</a> = 					<span class="var-type"> 8</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#INUSE" title="details" class="const-name">INUSE</a> = 					<span class="var-type"> 4</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#NONEXISTENT" title="details" class="const-name">NONEXISTENT</a> = 					<span class="var-type"> 7</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#NOPERM" title="details" class="const-name">NOPERM</a> = 					<span class="var-type"> 1</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#OVERQUOTA" title="details" class="const-name">OVERQUOTA</a> = 					<span class="var-type"> 5</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#READONLY" title="details" class="const-name">READONLY</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#TRYCREATE" title="details" class="const-name">TRYCREATE</a> = 					<span class="var-type"> 3</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#UNKNOWN" title="details" class="const-name">UNKNOWN</a> = 					<span class="var-type"> 0</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																								<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$all_headers" title="details" class="var-name">$all_headers</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$conn" title="details" class="var-name">$conn</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$default_charset" title="details" class="var-name">$default_charset</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$default_folders" title="details" class="var-name">$default_folders</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$folder" title="details" class="var-name">$folder</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$options" title="details" class="var-name">$options</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$page_size" title="details" class="var-name">$page_size</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$search_set" title="details" class="var-name">$search_set</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$threading" title="details" class="var-name">$threading</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#check_connection" title="details" class="method-name">check_connection</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#check_permflag" title="details" class="method-name">check_permflag</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$flag</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#clear_cache" title="details" class="method-name">clear_cache</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$prefix_mode</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#clear_folder" title="details" class="method-name">clear_folder</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#close" title="details" class="method-name">close</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pass</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">143</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$use_ssl</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#copy_message" title="details" class="method-name">copy_message</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$to</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$from</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#count" title="details" class="method-name">count</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">'ALL'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$status</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#create_default_folders" title="details" class="method-name">create_default_folders</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#create_folder" title="details" class="method-name">create_folder</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$subscribe</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#delete_acl" title="details" class="method-name">delete_acl</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#delete_folder" title="details" class="method-name">delete_folder</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#delete_message" title="details" class="method-name">delete_message</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#delete_metadata" title="details" class="method-name">delete_metadata</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#expunge_cache" title="details" class="method-name">expunge_cache</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#expunge_folder" title="details" class="method-name">expunge_folder</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$clear_cache</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#expunge_message" title="details" class="method-name">expunge_message</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$clear_cache</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#folder_attributes" title="details" class="method-name">folder_attributes</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#folder_data" title="details" class="method-name">folder_data</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#folder_exists" title="details" class="method-name">folder_exists</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$subscription</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#folder_info" title="details" class="method-name">folder_info</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#folder_namespace" title="details" class="method-name">folder_namespace</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#folder_size" title="details" class="method-name">folder_size</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#folder_status" title="details" class="method-name">folder_status</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#folder_sync" title="details" class="method-name">folder_sync</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#get_acl" title="details" class="method-name">get_acl</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_body" title="details" class="method-name">get_body</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$part</span> = <span class="var-default">1</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#get_cache" title="details" class="method-name">get_cache</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#get_capability" title="details" class="method-name">get_capability</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$cap</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#get_error_code" title="details" class="method-name">get_error_code</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_error_str" title="details" class="method-name">get_error_str</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_folder" title="details" class="method-name">get_folder</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_hierarchy_delimiter" title="details" class="method-name">get_hierarchy_delimiter</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Storage/rcube_message_header.html">object rcube_message_header</a></span>
+										<a href="#get_message" title="details" class="method-name">get_message</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Storage/rcube_message_header.html">rcube_message_header</a></span>
+										<a href="#get_message_headers" title="details" class="method-name">get_message_headers</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">false</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">$id</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_message_part" title="details" class="method-name">get_message_part</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$part</span> = <span class="var-default">1</span>], [<span class="var-type"><a href="../../Framework/Storage/rcube_message_part.html">rcube_message_part</a></span>&nbsp;<span class="var-name">$o_part</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$print</span> = <span class="var-default">null</span>], [<span class="var-type">resource</span>&nbsp;<span class="var-name">$fp</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$skip_charset_conv</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#get_metadata" title="details" class="method-name">get_metadata</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#get_namespace" title="details" class="method-name">get_namespace</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#get_page" title="details" class="method-name">get_page</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#get_pagesize" title="details" class="method-name">get_pagesize</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#get_quota" title="details" class="method-name">get_quota</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_raw_body" title="details" class="method-name">get_raw_body</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">resource</span>&nbsp;<span class="var-name">$fp</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_raw_headers" title="details" class="method-name">get_raw_headers</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#get_response_code" title="details" class="method-name">get_response_code</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#get_search_set" title="details" class="method-name">get_search_set</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#get_threading" title="details" class="method-name">get_threading</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Storage/rcube_result_index.html">rcube_result_index</a>|<a href="../../Framework/Storage/rcube_result_thread.html">rcube_result_thread</a></span>
+										<a href="#index" title="details" class="method-name">index</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_field</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_order</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#is_connected" title="details" class="method-name">is_connected</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#list_folders" title="details" class="method-name">list_folders</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$root</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">'*'</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$rights</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$skip_sort</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#list_folders_subscribed" title="details" class="method-name">list_folders_subscribed</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$root</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">'*'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$rights</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$skip_sort</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#list_messages" title="details" class="method-name">list_messages</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$page</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_field</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_order</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$slice</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#list_rights" title="details" class="method-name">list_rights</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#mod_folder" title="details" class="method-name">mod_folder</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">'out'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#move_message" title="details" class="method-name">move_message</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$to</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$from</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#my_rights" title="details" class="method-name">my_rights</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#parse_uids" title="details" class="method-name">parse_uids</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#print_raw_body" title="details" class="method-name">print_raw_body</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$formatted</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#refresh_search" title="details" class="method-name">refresh_search</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#rename_folder" title="details" class="method-name">rename_folder</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$new_name</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">int|bool</span>
+										<a href="#save_message" title="details" class="method-name">save_message</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$message</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$headers</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$is_file</span> = <span class="var-default">false</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$flags</span> = <span class="var-default">array()</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$date</span> = <span class="var-default">null</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#search" title="details" class="method-name">search</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span> = <span class="var-default">'ALL'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_field</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Storage/rcube_result_index.html">rcube_result_index</a></span>
+										<a href="#search_once" title="details" class="method-name">search_once</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span> = <span class="var-default">'ALL'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#set_acl" title="details" class="method-name">set_acl</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$acl</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_charset" title="details" class="method-name">set_charset</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$cs</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_debug" title="details" class="method-name">set_debug</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$dbg</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_default_folders" title="details" class="method-name">set_default_folders</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$arr</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#set_flag" title="details" class="method-name">set_flag</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$flag</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$skip_cache</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_folder" title="details" class="method-name">set_folder</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#set_metadata" title="details" class="method-name">set_metadata</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_options" title="details" class="method-name">set_options</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$opt</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_page" title="details" class="method-name">set_page</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$page</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_pagesize" title="details" class="method-name">set_pagesize</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_search_set" title="details" class="method-name">set_search_set</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$set</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#set_threading" title="details" class="method-name">set_threading</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$enable</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#subscribe" title="details" class="method-name">subscribe</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$folders</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#unset_flag" title="details" class="method-name">unset_flag</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$flag</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#unsubscribe" title="details" class="method-name">unsubscribe</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$folders</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$all_headers" id="$all_headers"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$all_headers</span>
+			 = <span class="var-default">array(<br />        'IN-REPLY-TO',<br />        'BCC',<br />        'SENDER',<br />        'MESSAGE-ID',<br />        'CONTENT-TRANSFER-ENCODING',<br />        'REFERENCES',<br />        'X-DRAFT-INFO',<br />        'MAIL-FOLLOWUP-TO',<br />        'MAIL-REPLY-TO',<br />        'RETURN-PATH',<br />        'DELIVERED-TO',<br />        'ENVELOPE-TO',<br />    )</span>			(line <span class="line-number">53</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">All (additional) headers used (in any way) by Roundcube  Not listed here: DATE, FROM, TO, CC, REPLY-TO, SUBJECT, CONTENT-TYPE, LIST-POST  (used for messages listing) are hardcoded in rcube_imap_generic::fetchHeaders()</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$conn" id="$conn"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$conn</span>
+						(line <span class="line-number">36</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instance of connection object e.g. rcube_imap_generic</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#var$conn">rcube_imap::$conn</a>
+								: Instance of rcube_imap_generic
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$default_charset" id="$default_charset"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$default_charset</span>
+			 = <span class="var-default"> 'ISO-8859-1'</span>			(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$default_folders" id="$default_folders"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$default_folders</span>
+			 = <span class="var-default">array('INBOX')</span>			(line <span class="line-number">40</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$folder" id="$folder"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$folder</span>
+			 = <span class="var-default"> 'INBOX'</span>			(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$options" id="$options"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$options</span>
+			 = <span class="var-default">array('auth_type' =&gt; 'check')</span>			(line <span class="line-number">42</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#var$options">rcube_imap::$options</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$page_size" id="$page_size"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$page_size</span>
+			 = <span class="var-default"> 10</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$search_set" id="$search_set"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$search_set</span>
+						(line <span class="line-number">41</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#var$search_set">rcube_imap::$search_set</a>
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$threading" id="$threading"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$threading</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#var$threading">rcube_imap::$threading</a>
+							</li>
+				</ul>
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodcheck_connection" id="check_connection"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">check_connection</span> (line <span class="line-number">112</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check connection state, connect if not connected.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Connection state.</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			check_connection
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodcheck_connection">rcube_imap::check_connection()</a>
+								: Check connection state, connect if not connected.
+							</li>
+				</ul>
+	</div>
+<a name="methodcheck_permflag" id="check_permflag"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">check_permflag</span> (line <span class="line-number">328</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks the PERMANENTFLAGS capability of the current folder  and returns true if the given flag is supported by the server.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if this flag is supported</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			check_permflag
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$flag</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$flag</span><span class="var-description">: Permanentflag name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodcheck_permflag">rcube_imap::check_permflag()</a>
+								: Checks the PERMANENTFLAGS capability of the current folder  and returns true if the given flag is supported by the IMAP server
+							</li>
+				</ul>
+	</div>
+<a name="methodclear_cache" id="clear_cache"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">clear_cache</span> (line <span class="line-number">972</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clears the cache.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			clear_cache
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$prefix_mode</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: Cache key name or pattern</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$prefix_mode</span><span class="var-description">: Enable it to clear all keys starting                              with prefix specified in $key</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodclear_cache">rcube_imap::clear_cache()</a>
+								: Clears the cache.
+							</li>
+				</ul>
+	</div>
+<a name="methodclear_folder" id="clear_folder"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">clear_folder</span> (line <span class="line-number">740</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove all messages in a folder..</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			clear_folder
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodclose" id="close"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">close</span> (line <span class="line-number">96</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Close connection. Usually done on script shutdown</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			close
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodclose">rcube_imap::close()</a>
+								: Close IMAP connection.
+							</li>
+				</ul>
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">connect</span> (line <span class="line-number">90</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connect to the server</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE on success, FALSE on failure</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			connect
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pass</span>, [<span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">143</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$use_ssl</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$host</span><span class="var-description">: Host to connect</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user</span><span class="var-description">: Username for IMAP account</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pass</span><span class="var-description">: Password for IMAP account</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$port</span><span class="var-description">: Port to connect to</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$use_ssl</span><span class="var-description">: SSL schema (either ssl or tls) or null if plain connection</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodconnect">rcube_imap::connect()</a>
+								: Connect to an IMAP server
+							</li>
+				</ul>
+	</div>
+<a name="methodcopy_message" id="copy_message"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">copy_message</span> (line <span class="line-number">576</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Copy message(s) from one mailbox to another.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			copy_message
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$to</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$from</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$uids</span><span class="var-description">: Message UIDs as array or comma-separated string, or '*'</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$to</span><span class="var-description">: Target folder</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$from</span><span class="var-description">: Source folder</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodcopy_message">rcube_imap::copy_message()</a>
+								: Copy a message from one folder to another
+							</li>
+				</ul>
+	</div>
+<a name="methodcount" id="count"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">count</span> (line <span class="line-number">361</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get messages count for a specific folder.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Number of messages</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			count
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">'ALL'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$status</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mode</span><span class="var-description">: Mode for count [ALL|THREADS|UNSEEN|RECENT|EXISTS]</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$force</span><span class="var-description">: Force reading from server and update cache</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$status</span><span class="var-description">: Enables storing folder status info (max UID/count),                           required for folder_status()</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodcount">rcube_imap::count()</a>
+								: Get message count for a specific folder
+							</li>
+				</ul>
+	</div>
+<a name="methodcreate_default_folders" id="create_default_folders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">create_default_folders</span> (line <span class="line-number">844</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create all folders specified as default</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			create_default_folders
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodcreate_default_folders">rcube_imap::create_default_folders()</a>
+								: Create all folders specified as default
+							</li>
+				</ul>
+	</div>
+<a name="methodcreate_folder" id="create_folder"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">create_folder</span> (line <span class="line-number">695</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a new folder on the server.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			create_folder
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$subscribe</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: New folder name</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$subscribe</span><span class="var-description">: True if the newvfolder should be subscribed</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodcreate_folder">rcube_imap::create_folder()</a>
+								: Create a new folder on the server and register it in local cache
+							</li>
+				</ul>
+	</div>
+<a name="methoddelete_acl" id="delete_acl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">delete_acl</span> (line <span class="line-number">892</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes any &lt;identifier,rights&gt; pair for the  specified user from the ACL for the specified  folder (DELETEACL).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on failure</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			delete_acl
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user</span><span class="var-description">: User name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methoddelete_acl">rcube_imap::delete_acl()</a>
+								: Removes any &lt;identifier,rights&gt; pair for the  specified user from the ACL for the specified  folder (DELETEACL)
+							</li>
+				</ul>
+	</div>
+<a name="methoddelete_folder" id="delete_folder"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">delete_folder</span> (line <span class="line-number">716</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove a folder from the server.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			delete_folder
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methoddelete_folder">rcube_imap::delete_folder()</a>
+								: Remove folder from server
+							</li>
+				</ul>
+	</div>
+<a name="methoddelete_message" id="delete_message"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">delete_message</span> (line <span class="line-number">587</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Mark message(s) as deleted and expunge.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			delete_message
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$uids</span><span class="var-description">: Message UIDs as array or comma-separated string, or '*'</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Source folder</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methoddelete_message">rcube_imap::delete_message()</a>
+								: Mark messages as deleted and expunge them
+							</li>
+				</ul>
+	</div>
+<a name="methoddelete_metadata" id="delete_metadata"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">delete_metadata</span> (line <span class="line-number">946</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unsets metadata/annotations (SETMETADATA/SETANNOTATION)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on failure</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			delete_metadata
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name (empty for server metadata)</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$entries</span><span class="var-description">: Entry names array</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methoddelete_metadata">rcube_imap::delete_metadata()</a>
+								: Unsets IMAP metadata/annotations (SETMETADATA/SETANNOTATION)
+							</li>
+				</ul>
+	</div>
+<a name="methodexpunge_cache" id="expunge_cache"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">expunge_cache</span> (line <span class="line-number">988</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Delete outdated cache entries</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			expunge_cache
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodexpunge_cache">rcube_imap::expunge_cache()</a>
+								: Delete outdated cache entries
+							</li>
+				</ul>
+	</div>
+<a name="methodexpunge_folder" id="expunge_folder"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">expunge_folder</span> (line <span class="line-number">727</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Send expunge command and clear the cache.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			expunge_folder
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$clear_cache</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$clear_cache</span><span class="var-description">: False if cache should not be cleared</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodexpunge_message" id="expunge_message"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">expunge_message</span> (line <span class="line-number">599</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Expunge message(s) and clear the cache.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			expunge_message
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$clear_cache</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$uids</span><span class="var-description">: Message UIDs as array or comma-separated string, or '*'</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$clear_cache</span><span class="var-description">: False if cache should not be cleared</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodexpunge_message">rcube_imap::expunge_message()</a>
+								: Send IMAP expunge command and clear cache
+							</li>
+				</ul>
+	</div>
+<a name="methodfolder_attributes" id="folder_attributes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">folder_attributes</span> (line <span class="line-number">785</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets folder attributes (from LIST response, e.g. \Noselect, \Noinferiors).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Options list</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			folder_attributes
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$force</span><span class="var-description">: Set to True if attributes should be refreshed</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodfolder_attributes">rcube_imap::folder_attributes()</a>
+								: Gets folder attributes from LIST response, e.g. \Noselect, \Noinferiors
+							</li>
+				</ul>
+	</div>
+<a name="methodfolder_data" id="folder_data"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">folder_data</span> (line <span class="line-number">796</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets connection (and current folder) data: UIDVALIDITY, EXISTS, RECENT,  PERMANENTFLAGS, UIDNEXT, UNSEEN</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Data</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			folder_data
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodfolder_data">rcube_imap::folder_data()</a>
+								: Gets connection (and current folder) data: UIDVALIDITY, EXISTS, RECENT,  PERMANENTFLAGS, UIDNEXT, UNSEEN
+							</li>
+				</ul>
+	</div>
+<a name="methodfolder_exists" id="folder_exists"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">folder_exists</span> (line <span class="line-number">754</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if folder exists and is subscribed</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if folder exists, False otherwise</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			folder_exists
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$subscription</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$subscription</span><span class="var-description">: Enable subscription checking</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodfolder_exists">rcube_imap::folder_exists()</a>
+								: Checks if folder exists and is subscribed
+							</li>
+				</ul>
+	</div>
+<a name="methodfolder_info" id="folder_info"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">folder_info</span> (line <span class="line-number">806</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns extended information about the folder.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Data</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			folder_info
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodfolder_info">rcube_imap::folder_info()</a>
+								: Returns extended information about the folder
+							</li>
+				</ul>
+	</div>
+<a name="methodfolder_namespace" id="folder_namespace"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">folder_namespace</span> (line <span class="line-number">774</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the namespace where the folder is in</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> One of 'personal', 'other' or 'shared'</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			folder_namespace
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodfolder_namespace">rcube_imap::folder_namespace()</a>
+								: Returns the namespace where the folder is in
+							</li>
+				</ul>
+	</div>
+<a name="methodfolder_size" id="folder_size"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">folder_size</span> (line <span class="line-number">764</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get folder size (size of all messages in a folder)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Folder size in bytes, False on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			folder_size
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodfolder_size">rcube_imap::folder_size()</a>
+								: Get folder size (size of all messages in a folder)
+							</li>
+				</ul>
+	</div>
+<a name="methodfolder_status" id="folder_status"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">folder_status</span> (line <span class="line-number">816</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns current status of a folder</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Folder status</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			folder_status
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodfolder_status">rcube_imap::folder_status()</a>
+								: Returns current status of folder
+							</li>
+				</ul>
+	</div>
+<a name="methodfolder_sync" id="folder_sync"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">folder_sync</span> (line <span class="line-number">824</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Synchronizes messages cache.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			folder_sync
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodfolder_sync">rcube_imap::folder_sync()</a>
+								: Synchronizes messages cache.
+							</li>
+				</ul>
+	</div>
+<a name="methodget_acl" id="get_acl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_acl</span> (line <span class="line-number">902</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the access control list for a folder (GETACL).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> User-rights array on success, NULL on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_acl
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_acl">rcube_imap::get_acl()</a>
+								: Returns the access control list for folder (GETACL)
+							</li>
+				</ul>
+	</div>
+<a name="methodget_body" id="get_body"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_body</span> (line <span class="line-number">473</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fetch message body of a specific message from the server</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Message/part body</li>
+				<li><span class="field">see:</span> <a href="../../Framework/Storage/rcube_imap.html#methodget_message_part">rcube_imap::get_message_part()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_body
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$part</span> = <span class="var-default">1</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$uid</span><span class="var-description">: Message UID</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$part</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_cache" id="get_cache"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_cache</span> (line <span class="line-number">982</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns cached value</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Cached value</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get_cache
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: Cache key</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_cache">rcube_imap::get_cache()</a>
+								: Returns cached value
+							</li>
+				</ul>
+	</div>
+<a name="methodget_capability" id="get_capability"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_capability</span> (line <span class="line-number">283</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the storage server's (IMAP) capability</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Capability value or TRUE if supported, FALSE if not</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get_capability
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$cap</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cap</span><span class="var-description">: Capability name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_capability">rcube_imap::get_capability()</a>
+								: Returns the IMAP server's capability.
+							</li>
+				</ul>
+	</div>
+<a name="methodget_error_code" id="get_error_code"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_error_code</span> (line <span class="line-number">120</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns code of last error</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Error code</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_error_code
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_error_code">rcube_imap::get_error_code()</a>
+								: Returns code of last error
+							</li>
+				</ul>
+	</div>
+<a name="methodget_error_str" id="get_error_str"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_error_str</span> (line <span class="line-number">128</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns message of last error</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Error message</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_error_str
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_error_str">rcube_imap::get_error_str()</a>
+								: Returns text of last error
+							</li>
+				</ul>
+	</div>
+<a name="methodget_folder" id="get_folder"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_folder</span> (line <span class="line-number">210</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the currently used folder name</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Name of the folder</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_folder
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_hierarchy_delimiter" id="get_hierarchy_delimiter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_hierarchy_delimiter</span> (line <span class="line-number">337</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the delimiter that is used by the server  for folder hierarchy separation.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Delimiter string</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_hierarchy_delimiter
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_hierarchy_delimiter">rcube_imap::get_hierarchy_delimiter()</a>
+								: Returns the delimiter that is used by the IMAP server for folder separation
+							</li>
+				</ul>
+	</div>
+<a name="methodget_message" id="get_message"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_message</span> (line <span class="line-number">435</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fetch message headers and body structure from the server and build  an object structure similar to the one generated by PEAR::Mail_mimeDecode</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Message data</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Storage/rcube_message_header.html">object rcube_message_header</a></span>
+		<span class="method-name">
+			get_message
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$uid</span><span class="var-description">: Message UID to fetch</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder to read from</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_message">rcube_imap::get_message()</a>
+								: Fetch message headers and body structure from the IMAP server and build  an object structure similar to the one generated by PEAR::Mail_mimeDecode
+							</li>
+				</ul>
+	</div>
+<a name="methodget_message_headers" id="get_message_headers"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_message_headers</span> (line <span class="line-number">447</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return message headers object of a specific message</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Message headers</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Storage/rcube_message_header.html">rcube_message_header</a></span>
+		<span class="method-name">
+			get_message_headers
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$force</span> = <span class="var-default">false</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">$id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$id</span><span class="var-description">: Message sequence ID or UID</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder to read from</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$force</span><span class="var-description">: True to skip cache</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$uid</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_message_headers">rcube_imap::get_message_headers()</a>
+								: Return message headers object of a specific message
+							</li>
+				</ul>
+	</div>
+<a name="methodget_message_part" id="get_message_part"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_message_part</span> (line <span class="line-number">462</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fetch message body of a specific message from the server</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Message/part body if not printed</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_message_part
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$part</span> = <span class="var-default">1</span>], [<span class="var-type"><a href="../../Framework/Storage/rcube_message_part.html">rcube_message_part</a></span>&nbsp;<span class="var-name">$o_part</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$print</span> = <span class="var-default">null</span>], [<span class="var-type">resource</span>&nbsp;<span class="var-name">$fp</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$skip_charset_conv</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$uid</span><span class="var-description">: Message UID</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$part</span><span class="var-description">: Part number</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../Framework/Storage/rcube_message_part.html">rcube_message_part</a></span>
+				<span class="var-name">$o_part</span><span class="var-description">: Part object created by get_structure()</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$print</span><span class="var-description">: True to print part, ressource to write part contents in</span>			</li>
+					<li>
+				<span class="var-type">resource</span>
+				<span class="var-name">$fp</span><span class="var-description">: File pointer to save the message part</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$skip_charset_conv</span><span class="var-description">: Disables charset conversion</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_message_part">rcube_imap::get_message_part()</a>
+								: Fetch message body of a specific message from the server
+							</li>
+				</ul>
+	</div>
+<a name="methodget_metadata" id="get_metadata"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_metadata</span> (line <span class="line-number">958</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns folder metadata/annotations (GETMETADATA/GETANNOTATION).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Metadata entry-value hash array on success, NULL on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_metadata
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name (empty for server metadata)</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$entries</span><span class="var-description">: Entries</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$options</span><span class="var-description">: Command options (with MAXSIZE and DEPTH keys)</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_metadata">rcube_imap::get_metadata()</a>
+								: Returns IMAP metadata/annotations (GETMETADATA/GETANNOTATION)
+							</li>
+				</ul>
+	</div>
+<a name="methodget_namespace" id="get_namespace"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_namespace</span> (line <span class="line-number">347</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get namespace</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Namespace data</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_namespace
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Namespace array index: personal, other, shared, prefix</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_namespace">rcube_imap::get_namespace()</a>
+								: Get namespace
+							</li>
+				</ul>
+	</div>
+<a name="methodget_page" id="get_page"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_page</span> (line <span class="line-number">232</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets internal list page number.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Page number</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_page
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_pagesize" id="get_pagesize"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_pagesize</span> (line <span class="line-number">254</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get internal page size</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Number of messages to display on one page</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_pagesize
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_quota" id="get_quota"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_quota</span> (line <span class="line-number">863</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get mailbox quota information.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Quota info or False if not supported</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get_quota
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_quota">rcube_imap::get_quota()</a>
+								: Get mailbox quota information  added by Nuny
+							</li>
+				</ul>
+	</div>
+<a name="methodget_raw_body" id="get_raw_body"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_raw_body</span> (line <span class="line-number">489</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the whole message source as string (or saves to a file)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Message source string</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_raw_body
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">resource</span>&nbsp;<span class="var-name">$fp</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$uid</span><span class="var-description">: Message UID</span>			</li>
+					<li>
+				<span class="var-type">resource</span>
+				<span class="var-name">$fp</span><span class="var-description">: File pointer to save the message</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_raw_body">rcube_imap::get_raw_body()</a>
+								: Returns the whole message source as string (or saves to a file)
+							</li>
+				</ul>
+	</div>
+<a name="methodget_raw_headers" id="get_raw_headers"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_raw_headers</span> (line <span class="line-number">499</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the message headers as string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Message headers string</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_raw_headers
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$uid</span><span class="var-description">: Message UID</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_raw_headers">rcube_imap::get_raw_headers()</a>
+								: Returns the message headers as string
+							</li>
+				</ul>
+	</div>
+<a name="methodget_response_code" id="get_response_code"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_response_code</span> (line <span class="line-number">136</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns code of last command response</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Response code (class constant)</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_response_code
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_response_code">rcube_imap::get_response_code()</a>
+								: Returns code of last command response
+							</li>
+				</ul>
+	</div>
+<a name="methodget_search_set" id="get_search_set"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">get_search_set</span> (line <span class="line-number">273</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the saved search set.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Search set in driver specific format, NULL if search wasn't initialized</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_search_set
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodget_search_set">rcube_imap::get_search_set()</a>
+								: Return the saved search set as hash array
+							</li>
+				</ul>
+	</div>
+<a name="methodget_threading" id="get_threading"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_threading</span> (line <span class="line-number">314</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get current threading flag.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Threading algorithm or False if THREAD is not supported or disabled</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get_threading
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodindex" id="index"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">index</span> (line <span class="line-number">387</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return sorted list of message UIDs</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of messages (UIDs)</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Storage/rcube_result_index.html">rcube_result_index</a>|<a href="../../Framework/Storage/rcube_result_thread.html">rcube_result_thread</a></span>
+		<span class="method-name">
+			index
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_field</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_order</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder to get index from</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sort_field</span><span class="var-description">: Sort column</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sort_order</span><span class="var-description">: Sort order [ASC, DESC]</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodindex">rcube_imap::index()</a>
+								: Return sorted list of message UIDs
+							</li>
+				</ul>
+	</div>
+<a name="methodis_connected" id="is_connected"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">is_connected</span> (line <span class="line-number">104</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks connection state.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE on success, FALSE on failure</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_connected
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodis_connected">rcube_imap::is_connected()</a>
+								: Checks IMAP connection.
+							</li>
+				</ul>
+	</div>
+<a name="methodlist_folders" id="list_folders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">list_folders</span> (line <span class="line-number">664</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a list of all folders available on the server.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Indexed array with folder names</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			list_folders
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$root</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">'*'</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$rights</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$skip_sort</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$root</span><span class="var-description">: IMAP root dir</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Optional name pattern</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$filter</span><span class="var-description">: Optional filter</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$rights</span><span class="var-description">: Optional ACL requirements</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$skip_sort</span><span class="var-description">: Enable to return unsorted list (for better performance)</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodlist_folders">rcube_imap::list_folders()</a>
+								: Get a list of all folders available on the server
+							</li>
+				</ul>
+	</div>
+<a name="methodlist_folders_subscribed" id="list_folders_subscribed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">list_folders_subscribed</span> (line <span class="line-number">650</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a list of subscribed folders.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of folders</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			list_folders_subscribed
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$root</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">'*'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$filter</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$rights</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$skip_sort</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$root</span><span class="var-description">: Optional root folder</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Optional name pattern</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filter</span><span class="var-description">: Optional filter</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$rights</span><span class="var-description">: Optional ACL requirements</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$skip_sort</span><span class="var-description">: Enable to return unsorted list (for better performance)</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodlist_folders_subscribed">rcube_imap::list_folders_subscribed()</a>
+								: Public method for listing subscribed folders.
+							</li>
+				</ul>
+	</div>
+<a name="methodlist_messages" id="list_messages"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">list_messages</span> (line <span class="line-number">375</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Public method for listing headers.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Indexed array with message header objects</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			list_messages
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$page</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_field</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_order</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$slice</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$page</span><span class="var-description">: Current page to list</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sort_field</span><span class="var-description">: Header field to sort by</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sort_order</span><span class="var-description">: Sort order [ASC|DESC]</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$slice</span><span class="var-description">: Number of slice items to extract from result array</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodlist_messages">rcube_imap::list_messages()</a>
+								: Public method for listing headers
+							</li>
+				</ul>
+	</div>
+<a name="methodlist_rights" id="list_rights"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">list_rights</span> (line <span class="line-number">914</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns information about what rights can be granted to the  user (identifier) in the ACL for the folder (LISTRIGHTS).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of user rights</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			list_rights
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user</span><span class="var-description">: User name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodlist_rights">rcube_imap::list_rights()</a>
+								: Returns information about what rights can be granted to the  user (identifier) in the ACL for the folder (LISTRIGHTS)
+							</li>
+				</ul>
+	</div>
+<a name="methodmod_folder" id="mod_folder"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">mod_folder</span> (line <span class="line-number">838</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Modify folder name according to namespace.</p>
+<p class="description"><p>For output it removes prefix of the personal namespace if it's possible.  For input it adds the prefix. Use it before creating a folder in root  of the folders tree.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Folder name</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			mod_folder
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">'out'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mode</span><span class="var-description">: Mode name (out/in)</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodmod_folder">rcube_imap::mod_folder()</a>
+								: Modify folder name according to namespace.
+							</li>
+				</ul>
+	</div>
+<a name="methodmove_message" id="move_message"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">move_message</span> (line <span class="line-number">564</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Move message(s) from one folder to another.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			move_message
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$to</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$from</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$uids</span><span class="var-description">: Message UIDs as array or comma-separated string, or '*'</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$to</span><span class="var-description">: Target folder</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$from</span><span class="var-description">: Source folder</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodmove_message">rcube_imap::move_message()</a>
+								: Move a message from one folder to another
+							</li>
+				</ul>
+	</div>
+<a name="methodmy_rights" id="my_rights"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">my_rights</span> (line <span class="line-number">924</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns the set of rights that the current user has to a folder (MYRIGHTS).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> MYRIGHTS response on success, NULL on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			my_rights
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodmy_rights">rcube_imap::my_rights()</a>
+								: Returns the set of rights that the current user has to  folder (MYRIGHTS)
+							</li>
+				</ul>
+	</div>
+<a name="methodparse_uids" id="parse_uids"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">parse_uids</span> (line <span class="line-number">609</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse message UIDs input</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Two elements array with UIDs converted to list and ALL flag</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			parse_uids
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$uids</span><span class="var-description">: UIDs array or comma-separated list or '*' or '1:*'</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprint_raw_body" id="print_raw_body"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">print_raw_body</span> (line <span class="line-number">508</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sends the whole message source to stdout</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			print_raw_body
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$uid</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$formatted</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$uid</span><span class="var-description">: Message UID</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$formatted</span><span class="var-description">: Enables line-ending formatting</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodprint_raw_body">rcube_imap::print_raw_body()</a>
+								: Sends the whole message source to stdout
+							</li>
+				</ul>
+	</div>
+<a name="methodrefresh_search" id="refresh_search"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">refresh_search</span> (line <span class="line-number">419</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Refresh saved search set</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Current search set</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			refresh_search
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodrefresh_search">rcube_imap::refresh_search()</a>
+								: Refresh saved search set
+							</li>
+				</ul>
+	</div>
+<a name="methodrename_folder" id="rename_folder"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">rename_folder</span> (line <span class="line-number">706</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set a new name to an existing folder</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			rename_folder
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$new_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder to rename</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$new_name</span><span class="var-description">: New folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodrename_folder">rcube_imap::rename_folder()</a>
+								: Set a new name to an existing folder
+							</li>
+				</ul>
+	</div>
+<a name="methodsave_message" id="save_message"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">save_message</span> (line <span class="line-number">552</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Append a mail message (source) to a specific folder.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Appended message UID or True on success, False on error</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int|bool</span>
+		<span class="method-name">
+			save_message
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type"></span>&nbsp;<span class="var-name">&$message</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$headers</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$is_file</span> = <span class="var-default">false</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$flags</span> = <span class="var-default">array()</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$date</span> = <span class="var-default">null</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Target folder</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$message</span><span class="var-description">: The message source string or filename</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$headers</span><span class="var-description">: Headers string if $message contains only the body</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$is_file</span><span class="var-description">: True if $message is a filename</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$flags</span><span class="var-description">: Message flags</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$date</span><span class="var-description">: Message internal date</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$message</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodsave_message">rcube_imap::save_message()</a>
+								: Append a mail message (source) to a specific folder
+							</li>
+				</ul>
+	</div>
+<a name="methodsearch" id="search"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">search</span> (line <span class="line-number">400</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Invoke search request to the server.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			search
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span> = <span class="var-default">'ALL'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sort_field</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name to search in</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Search criteria</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$charset</span><span class="var-description">: Search charset</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sort_field</span><span class="var-description">: Header field to sort by</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodsearch">rcube_imap::search()</a>
+								: Invoke search request to IMAP server
+							</li>
+				</ul>
+	</div>
+<a name="methodsearch_once" id="search_once"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">search_once</span> (line <span class="line-number">411</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Direct (real and simple) search request (without result sorting and caching).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Search result (UIDs)</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Storage/rcube_result_index.html">rcube_result_index</a></span>
+		<span class="method-name">
+			search_once
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span> = <span class="var-default">'ALL'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name to search in</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Search string</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodsearch_once">rcube_imap::search_once()</a>
+								: Direct (real and simple) SEARCH request (without result sorting and caching).
+							</li>
+				</ul>
+	</div>
+<a name="methodset_acl" id="set_acl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">set_acl</span> (line <span class="line-number">879</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Changes the ACL on the specified folder (SETACL)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on failure</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			set_acl
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$acl</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user</span><span class="var-description">: User name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$acl</span><span class="var-description">: ACL string</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodset_acl">rcube_imap::set_acl()</a>
+								: Changes the ACL on the specified folder (SETACL)
+							</li>
+				</ul>
+	</div>
+<a name="methodset_charset" id="set_charset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_charset</span> (line <span class="line-number">165</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set default message charset.</p>
+<p class="description"><p>This will be used for message decoding if a charset specification is not available</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_charset
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$cs</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cs</span><span class="var-description">: Charset string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_debug" id="set_debug"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">set_debug</span> (line <span class="line-number">155</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Activate/deactivate debug mode.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_debug
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$dbg</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$dbg</span><span class="var-description">: True if conversation with the server should be logged</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodset_debug">rcube_imap::set_debug()</a>
+								: Activate/deactivate debug mode
+							</li>
+				</ul>
+	</div>
+<a name="methodset_default_folders" id="set_default_folders"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_default_folders</span> (line <span class="line-number">176</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This list of folders will be listed above all other folders</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_default_folders
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$arr</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$arr</span><span class="var-description">: Indexed list of folder names</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_flag" id="set_flag"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">set_flag</span> (line <span class="line-number">521</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set message flag to one or several messages</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Operation status</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			set_flag
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$flag</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$skip_cache</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$uids</span><span class="var-description">: Message UIDs as array or comma-separated string, or '*'</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$flag</span><span class="var-description">: Flag to set: SEEN, UNDELETED, DELETED, RECENT, ANSWERED, DRAFT, MDNSENT</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$skip_cache</span><span class="var-description">: True to skip message cache clean up</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodset_flag">rcube_imap::set_flag()</a>
+								: Set message flag to one or several messages
+							</li>
+				</ul>
+	</div>
+<a name="methodset_folder" id="set_folder"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_folder</span> (line <span class="line-number">195</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set internal folder reference.</p>
+<p class="description"><p>All operations will be perfomed on this folder.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_folder
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodset_folder">rcube_imap::set_folder()</a>
+								: Set internal folder reference.
+							</li>
+				</ul>
+	</div>
+<a name="methodset_metadata" id="set_metadata"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">set_metadata</span> (line <span class="line-number">935</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets metadata/annotations (SETMETADATA/SETANNOTATION)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False on failure</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			set_metadata
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$entries</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name (empty for server metadata)</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$entries</span><span class="var-description">: Entry-value array (use NULL value as NIL)</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodset_metadata">rcube_imap::set_metadata()</a>
+								: Sets IMAP metadata/annotations (SETMETADATA/SETANNOTATION)
+							</li>
+				</ul>
+	</div>
+<a name="methodset_options" id="set_options"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_options</span> (line <span class="line-number">144</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set connection and class options</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_options
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$opt</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$opt</span><span class="var-description">: Options array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_page" id="set_page"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_page</span> (line <span class="line-number">221</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set internal list page number.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_page
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$page</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$page</span><span class="var-description">: Page number to list</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_pagesize" id="set_pagesize"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_pagesize</span> (line <span class="line-number">243</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set internal page size</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_pagesize
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$size</span><span class="var-description">: Number of messages to display on one page</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_search_set" id="set_search_set"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">set_search_set</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Save a search result for future message listing methods.</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_search_set
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$set</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$set</span><span class="var-description">: Search set in driver specific format</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodset_search_set">rcube_imap::set_search_set()</a>
+								: Save a search result for future message listing methods
+							</li>
+				</ul>
+	</div>
+<a name="methodset_threading" id="set_threading"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_threading</span> (line <span class="line-number">294</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets threading flag to the best supported THREAD algorithm.</p>
+<p class="description"><p>Enable/Disable threaded mode.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Threading algorithm or False if THREAD is not supported</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			set_threading
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$enable</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$enable</span><span class="var-description">: TRUE to enable and FALSE</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsubscribe" id="subscribe"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">subscribe</span> (line <span class="line-number">674</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Subscribe to a specific folder(s)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			subscribe
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$folders</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$folders</span><span class="var-description">: Folder name(s)</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodsubscribe">rcube_imap::subscribe()</a>
+								: Subscribe to a specific folder(s)
+							</li>
+				</ul>
+	</div>
+<a name="methodunset_flag" id="unset_flag"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">unset_flag</span> (line <span class="line-number">534</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove message flag for one or several messages</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Operation status</li>
+				<li><span class="field">see:</span> <a href="../../Framework/Storage/rcube_storage.html#methodset_flag">rcube_storage::set_flag()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			unset_flag
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$uids</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$flag</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$folder</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$uids</span><span class="var-description">: Message UIDs as array or comma-separated string, or '*'</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$flag</span><span class="var-description">: Flag to unset: SEEN, DELETED, RECENT, ANSWERED, DRAFT, MDNSENT</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$folder</span><span class="var-description">: Folder name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodunsubscribe" id="unsubscribe"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">unsubscribe</span> (line <span class="line-number">684</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unsubscribe folder(s)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success</li>
+				<li><span class="field">abstract:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			unsubscribe
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$folders</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$folders</span><span class="var-description">: Folder name(s)</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Framework/Storage/rcube_imap.html#methodunsubscribe">rcube_imap::unsubscribe()</a>
+								: Unsubscribe folder(s)
+							</li>
+				</ul>
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constALREADYEXISTS" id="ALREADYEXISTS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ALREADYEXISTS</span>
+			 = <span class="const-default"> 6</span>
+			(line <span class="line-number">74</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constCONTACTADMIN" id="CONTACTADMIN"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">CONTACTADMIN</span>
+			 = <span class="const-default"> 8</span>
+			(line <span class="line-number">76</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constINUSE" id="INUSE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">INUSE</span>
+			 = <span class="const-default"> 4</span>
+			(line <span class="line-number">72</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constNONEXISTENT" id="NONEXISTENT"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">NONEXISTENT</span>
+			 = <span class="const-default"> 7</span>
+			(line <span class="line-number">75</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constNOPERM" id="NOPERM"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">NOPERM</span>
+			 = <span class="const-default"> 1</span>
+			(line <span class="line-number">69</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constOVERQUOTA" id="OVERQUOTA"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">OVERQUOTA</span>
+			 = <span class="const-default"> 5</span>
+			(line <span class="line-number">73</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constREADONLY" id="READONLY"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">READONLY</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">70</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constTRYCREATE" id="TRYCREATE"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">TRYCREATE</span>
+			 = <span class="const-default"> 3</span>
+			(line <span class="line-number">71</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constUNKNOWN" id="UNKNOWN"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">UNKNOWN</span>
+			 = <span class="const-default"> 0</span>
+			(line <span class="line-number">68</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 06 Sep 2013 14:21:19 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

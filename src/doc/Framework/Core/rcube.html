@@ -1,0 +1,1932 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class rcube</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> rcube</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Base class of the Roundcube Framework  implemented as singleton</p>
+		<p class="notes">
+			Located in <a class="field" href="_rcube.php.html">/rcube.php</a> (line <span class="field">29</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#INIT_WITH_DB" title="details" class="const-name">INIT_WITH_DB</a> = 					<span class="var-type"> 1</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#INIT_WITH_PLUGINS" title="details" class="const-name">INIT_WITH_PLUGINS</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																												<div class="var-title">
+					<img src="../../media/images/StaticVariable.png" alt=" " />
+					static <span class="var-type"><a href="../../Framework/Core/rcube.html">rcube</a></span>
+					<a href="#$instance" title="details" class="var-name">$instance</a>
+				</div>
+																																																																																				<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$caches" title="details" class="var-name">$caches</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../Framework/Core/rcube_config.html">rcube_config</a></span>
+					<a href="#$config" title="details" class="var-name">$config</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../Framework/Database/rcube_db.html">rcube_db</a></span>
+					<a href="#$db" title="details" class="var-name">$db</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$expunge_cache" title="details" class="var-name">$expunge_cache</a>
+				</div>
+																								<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">Memcache</span>
+					<a href="#$memcache" title="details" class="var-name">$memcache</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../Framework/View/rcube_output.html">rcube_output</a></span>
+					<a href="#$output" title="details" class="var-name">$output</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../Framework/PluginAPI/rcube_plugin_api.html">rcube_plugin_api</a></span>
+					<a href="#$plugins" title="details" class="var-name">$plugins</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../Framework/Core/rcube_session.html">rcube_session</a></span>
+					<a href="#$session" title="details" class="var-name">$session</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$shutdown_functions" title="details" class="var-name">$shutdown_functions</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../Framework/Mail/rcube_smtp.html">rcube_smtp</a></span>
+					<a href="#$smtp" title="details" class="var-name">$smtp</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../../Framework/Storage/rcube_storage.html">rcube_storage</a></span>
+					<a href="#$storage" title="details" class="var-name">$storage</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$texts" title="details" class="var-name">$texts</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																				<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#console" title="details" class="method-name">console</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+																																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">output</span>
+										<a href="#exec" title="details" class="method-name">exec</a>
+											(<span class="var-type">$cmd</span>&nbsp;<span class="var-name">0</span>, <span class="var-type">$values</span>&nbsp;<span class="var-name">1</span>)
+									</div>
+																																								<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result"><a href="../../Framework/Core/rcube.html">rcube</a></span>
+										<a href="#get_instance" title="details" class="method-name">get_instance</a>
+											([<span class="var-type">integer</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">0</span>])
+									</div>
+																																																																																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#JQ" title="details" class="method-name">JQ</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																																								<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#log_bug" title="details" class="method-name">log_bug</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$arg_arr</span>)
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#print_timer" title="details" class="method-name">print_timer</a>
+											(<span class="var-type">float</span>&nbsp;<span class="var-name">$timer</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span> = <span class="var-default">'Timer'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$dest</span> = <span class="var-default">'console'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#Q" title="details" class="method-name">Q</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">'strict'</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$newlines</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#raise_error" title="details" class="method-name">raise_error</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$arg</span> = <span class="var-default">array()</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$log</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$terminate</span> = <span class="var-default">false</span>])
+									</div>
+																																																																								<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">float</span>
+										<a href="#timer" title="details" class="method-name">timer</a>
+										()
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#write_log" title="details" class="method-name">write_log</a>
+											(<span class="var-type">$name</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">line</span>&nbsp;<span class="var-name">$line</span>)
+									</div>
+																				<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">rcube</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#add_shutdown_function" title="details" class="method-name">add_shutdown_function</a>
+											(<span class="var-type">callback</span>&nbsp;<span class="var-name">$function</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#cache_gc" title="details" class="method-name">cache_gc</a>
+										()
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#decrypt" title="details" class="method-name">decrypt</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$cipher</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">'des_key'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$base64</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#encrypt" title="details" class="method-name">encrypt</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$clear</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">'des_key'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$base64</span> = <span class="var-default">true</span>])
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#gettext" title="details" class="method-name">gettext</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$attrib</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Cache/rcube_cache.html">rcube_cache</a></span>
+										<a href="#get_cache" title="details" class="method-name">get_cache</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'db'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ttl</span> = <span class="var-default">0</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$packed</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Database/rcube_db.html">rcube_db</a></span>
+										<a href="#get_dbh" title="details" class="method-name">get_dbh</a>
+										()
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">object Memcache</span>
+										<a href="#get_memcache" title="details" class="method-name">get_memcache</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result"><a href="../../Framework/Storage/rcube_storage.html">rcube_storage</a></span>
+										<a href="#get_storage" title="details" class="method-name">get_storage</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_user_email" title="details" class="method-name">get_user_email</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#get_user_id" title="details" class="method-name">get_user_id</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_user_language" title="details" class="method-name">get_user_language</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_user_name" title="details" class="method-name">get_user_name</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#get_user_password" title="details" class="method-name">get_user_password</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#init" title="details" class="method-name">init</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">0</span>])
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#language_prop" title="details" class="method-name">language_prop</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$lang</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#list_languages" title="details" class="method-name">list_languages</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#load_language" title="details" class="method-name">load_language</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$lang</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$add</span> = <span class="var-default">array()</span>])
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#memcache_failure" title="details" class="method-name">memcache_failure</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$host</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$port</span>)
+									</div>
+																																								<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#session_init" title="details" class="method-name">session_init</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#set_storage_prop" title="details" class="method-name">set_storage_prop</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#shutdown" title="details" class="method-name">shutdown</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#smtp_init" title="details" class="method-name">smtp_init</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$connect</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#storage_init" title="details" class="method-name">storage_init</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#temp_gc" title="details" class="method-name">temp_gc</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#text_exists" title="details" class="method-name">text_exists</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">&$ref_domain</span> = <span class="var-default">null</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$ref_domain</span>)
+									</div>
+																								<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#url" title="details" class="method-name">url</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$p</span>)
+									</div>
+																			</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$instance" id="$instance"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			static <span class="var-type"><a href="../../Framework/Core/rcube.html">rcube</a></span>
+			<span class="var-name">$instance</span>
+						(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Singleton instace of rcube</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+
+<a name="var$caches" id="$caches"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$caches</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">100</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$config" id="$config"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../Framework/Core/rcube_config.html">rcube_config</a></span>
+			<span class="var-name">$config</span>
+						(line <span class="line-number">46</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores instance of rcube_config.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$db" id="$db"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../Framework/Database/rcube_db.html">rcube_db</a></span>
+			<span class="var-name">$db</span>
+						(line <span class="line-number">53</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instace of database class.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$expunge_cache" id="$expunge_cache"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$expunge_cache</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">102</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$memcache" id="$memcache"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">Memcache</span>
+			<span class="var-name">$memcache</span>
+						(line <span class="line-number">60</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instace of Memcache class.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$output" id="$output"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../Framework/View/rcube_output.html">rcube_output</a></span>
+			<span class="var-name">$output</span>
+						(line <span class="line-number">88</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instance of rcube_output class.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$plugins" id="$plugins"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../Framework/PluginAPI/rcube_plugin_api.html">rcube_plugin_api</a></span>
+			<span class="var-name">$plugins</span>
+						(line <span class="line-number">95</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instance of rcube_plugin_api.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$session" id="$session"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../Framework/Core/rcube_session.html">rcube_session</a></span>
+			<span class="var-name">$session</span>
+						(line <span class="line-number">67</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instace of rcube_session class.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$shutdown_functions" id="$shutdown_functions"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$shutdown_functions</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">101</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$smtp" id="$smtp"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../Framework/Mail/rcube_smtp.html">rcube_smtp</a></span>
+			<span class="var-name">$smtp</span>
+						(line <span class="line-number">74</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instance of rcube_smtp class.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$storage" id="$storage"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../../Framework/Storage/rcube_storage.html">rcube_storage</a></span>
+			<span class="var-name">$storage</span>
+						(line <span class="line-number">81</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Instance of rcube_storage class.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$texts" id="$texts"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$texts</span>
+						(line <span class="line-number">99</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodconsole" id="console"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static console</span> (line <span class="line-number">981</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Print or write debug messages</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			console
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">0</span><span class="var-description">: Debug message or data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodexec" id="exec"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static exec</span> (line <span class="line-number">932</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Construct shell command, execute it and return output as string.</p>
+<p class="description"><p>Keywords {keyword} are replaced with arguments</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of command. shell errors not detectable</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">output</span>
+		<span class="method-name">
+			exec
+		</span>
+					(<span class="var-type">$cmd</span>&nbsp;<span class="var-name">0</span>, <span class="var-type">$values</span>&nbsp;<span class="var-name">1</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$cmd</span>
+				<span class="var-name">0</span><span class="var-description">: Format string with {keywords} to be replaced</span>			</li>
+					<li>
+				<span class="var-type">$values</span>
+				<span class="var-name">1</span><span class="var-description">: (zero, one or more arrays can be passed)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_instance" id="get_instance"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static get_instance</span> (line <span class="line-number">112</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This implements the 'singleton' design pattern</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The one and only instance</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Core/rcube.html">rcube</a></span>
+		<span class="method-name">
+			get_instance
+		</span>
+					([<span class="var-type">integer</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$mode</span><span class="var-description">: Options to initialize with this instance. See rcube::INIT_WITH_* constants</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodJQ" id="JQ"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static JQ</span> (line <span class="line-number">917</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Quote a given string for javascript output.</p>
+<p class="description"><p>Shortcut function for rcube_utils::rep_specialchars_output()</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> JS-quoted string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			JQ
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlog_bug" id="log_bug"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static log_bug</span> (line <span class="line-number">1132</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Report error according to configured debug_level</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> self::raise_error()</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			log_bug
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$arg_arr</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$arg_arr</span><span class="var-description">: Named parameters</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprint_timer" id="print_timer"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static print_timer</span> (line <span class="line-number">1205</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Logs time difference according to provided timer</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> self::timer()</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			print_timer
+		</span>
+					(<span class="var-type">float</span>&nbsp;<span class="var-name">$timer</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span> = <span class="var-default">'Timer'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$dest</span> = <span class="var-default">'console'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">float</span>
+				<span class="var-name">$timer</span><span class="var-description">: Timer (self::timer() result)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$label</span><span class="var-description">: Log line prefix</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dest</span><span class="var-description">: Log file name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodQ" id="Q"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static Q</span> (line <span class="line-number">905</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Quote a given string.</p>
+<p class="description"><p>Shortcut function for rcube_utils::rep_specialchars_output()</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> HTML-quoted string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			Q
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">'strict'</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$newlines</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mode</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$newlines</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodraise_error" id="raise_error"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static raise_error</span> (line <span class="line-number">1077</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Throw system error (and show error page).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			raise_error
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$arg</span> = <span class="var-default">array()</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$log</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$terminate</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$arg</span><span class="var-description">: Named parameters <ul><li>code:    Error code (required)</li><li>type:    Error type [php|db|imap|javascript] (required)</li><li>message: Error message</li><li>file:    File where error occured</li><li>line:    Line where error occured</li></ul></span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$log</span><span class="var-description">: True to log the error</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$terminate</span><span class="var-description">: Terminate script execution</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodtimer" id="timer"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static timer</span> (line <span class="line-number">1190</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns current time (with microseconds).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Current time in seconds since the Unix</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">float</span>
+		<span class="method-name">
+			timer
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodwrite_log" id="write_log"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static write_log</span> (line <span class="line-number">1010</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Append a line to a logfile in the logs directory.</p>
+<p class="description"><p>Date will be added automatically to the line.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			write_log
+		</span>
+					(<span class="var-type">$name</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">line</span>&nbsp;<span class="var-name">$line</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$name</span>
+				<span class="var-name">$name</span><span class="var-description">: name of log file</span>			</li>
+					<li>
+				<span class="var-type">line</span>
+				<span class="var-name">$line</span><span class="var-description">: Line to append</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">126</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Private constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">rcube</span>
+		<span class="method-name">
+			__construct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadd_shutdown_function" id="add_shutdown_function"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">add_shutdown_function</span> (line <span class="line-number">893</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Registers shutdown function to be executed on shutdown.</p>
+<p class="description"><p>The functions will be executed before destroying any  objects like smtp, imap, session, etc.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_shutdown_function
+		</span>
+					(<span class="var-type">callback</span>&nbsp;<span class="var-name">$function</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">callback</span>
+				<span class="var-name">$function</span><span class="var-description">: Function callback</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcache_gc" id="cache_gc"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">cache_gc</span> (line <span class="line-number">479</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Garbage collector for cache entries.</p>
+<p class="description"><p>Set flag to expunge caches on shutdown</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			cache_gc
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddecrypt" id="decrypt"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">decrypt</span> (line <span class="line-number">771</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Decrypt 3DES-encrypted string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> decrypted text</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			decrypt
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$cipher</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">'des_key'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$base64</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cipher</span><span class="var-description">: encrypted text</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: encryption key to retrieve from the configuration, defaults to 'des_key'</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$base64</span><span class="var-description">: whether or not input is base64-encoded</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodencrypt" id="encrypt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">encrypt</span> (line <span class="line-number">719</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Encrypt using 3DES</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> encrypted text</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			encrypt
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$clear</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">'des_key'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$base64</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$clear</span><span class="var-description">: clear text input</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: encryption key to retrieve from the configuration, defaults to 'des_key'</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$base64</span><span class="var-description">: whether or not to base64_encode() the result before returning</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgettext" id="gettext"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">gettext</span> (line <span class="line-number">495</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get localized text in the desired language</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Localized text</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			gettext
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$attrib</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$attrib</span><span class="var-description">: Named parameters array or label name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$domain</span><span class="var-description">: Label domain (plugin) name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_cache" id="get_cache"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_cache</span> (line <span class="line-number">250</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initialize and get cache object</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Cache object</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Cache/rcube_cache.html">rcube_cache</a></span>
+		<span class="method-name">
+			get_cache
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'db'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ttl</span> = <span class="var-default">0</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$packed</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Cache identifier</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Cache type ('db', 'apc' or 'memcache')</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ttl</span><span class="var-description">: Expiration time for cache items</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$packed</span><span class="var-description">: Enables/disables data serialization</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_dbh" id="get_dbh"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_dbh</span> (line <span class="line-number">165</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the current database connection</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Database object</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Database/rcube_db.html">rcube_db</a></span>
+		<span class="method-name">
+			get_dbh
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_memcache" id="get_memcache"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_memcache</span> (line <span class="line-number">182</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get global handle for memcache access</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object Memcache</span>
+		<span class="method-name">
+			get_memcache
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_storage" id="get_storage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_storage</span> (line <span class="line-number">280</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initialize and get storage object</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Storage object</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Framework/Storage/rcube_storage.html">rcube_storage</a></span>
+		<span class="method-name">
+			get_storage
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_user_email" id="get_user_email"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_user_email</span> (line <span class="line-number">1260</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for logged user email (derived from user name not identity).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> User email address</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_user_email
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_user_id" id="get_user_id"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_user_id</span> (line <span class="line-number">1226</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for logged user ID.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> User identifier</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get_user_id
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_user_language" id="get_user_language"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_user_language</span> (line <span class="line-number">1289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for logged user language code.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> User language code</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_user_language
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_user_name" id="get_user_name"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_user_name</span> (line <span class="line-number">1244</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for logged user name.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> User name</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_user_name
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_user_password" id="get_user_password"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">get_user_password</span> (line <span class="line-number">1273</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Getter for logged user password.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> User password</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_user_password
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinit" id="init"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">init</span> (line <span class="line-number">139</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initial startup function</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			init
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlanguage_prop" id="language_prop"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">language_prop</span> (line <span class="line-number">640</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check the given string and return a valid language code</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Valid language code</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			language_prop
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$lang</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$lang</span><span class="var-description">: Language code</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlist_languages" id="list_languages"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">list_languages</span> (line <span class="line-number">685</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read directory program/localization and return a list of available languages</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of available localizations</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			list_languages
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodload_language" id="load_language"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">load_language</span> (line <span class="line-number">590</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load a localization package</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			load_language
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$lang</span> = <span class="var-default">null</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$add</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$lang</span><span class="var-description">: Language ID</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$add</span><span class="var-description">: Additional text labels/messages</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmemcache_failure" id="memcache_failure"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">memcache_failure</span> (line <span class="line-number">224</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Callback for memcache failure</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			memcache_failure
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$host</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$port</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$host</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$port</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsession_init" id="session_init"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">session_init</span> (line <span class="line-number">397</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create session object and start the session.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			session_init
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodset_storage_prop" id="set_storage_prop"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">set_storage_prop</span> (line <span class="line-number">376</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set storage parameters.</p>
+<p class="description"><p>This must be done AFTER connecting to the server!</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_storage_prop
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodshutdown" id="shutdown"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">shutdown</span> (line <span class="line-number">861</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function to be executed in script shutdown</p>
+<p class="description"><p>Registered with register_shutdown_function()</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			shutdown
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsmtp_init" id="smtp_init"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">smtp_init</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create SMTP object and connect to server</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			smtp_init
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$connect</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$connect</span><span class="var-description">: True if connection should be established</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstorage_init" id="storage_init"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">storage_init</span> (line <span class="line-number">294</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Initialize storage object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			storage_init
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodtemp_gc" id="temp_gc"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">temp_gc</span> (line <span class="line-number">454</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Garbage collector function for temp files.</p>
+<p class="description"><p>Remove temp files older than two days</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			temp_gc
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodtext_exists" id="text_exists"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">text_exists</span> (line <span class="line-number">553</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if the given text label exists</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if text exists (either in the current language or in en_US)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			text_exists
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">&$ref_domain</span> = <span class="var-default">null</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$ref_domain</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Label name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$domain</span><span class="var-description">: Label domain (plugin) name or '*' for all domains</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ref_domain</span><span class="var-description">: Sets domain name if label is found</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$ref_domain</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodurl" id="url"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">url</span> (line <span class="line-number">850</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Build a valid URL to this instance of Roundcube</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Valid application URL</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			url
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$p</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$p</span><span class="var-description">: Either a string with the action or url parameters as key-value pairs</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constINIT_WITH_DB" id="INIT_WITH_DB"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">INIT_WITH_DB</span>
+			 = <span class="const-default"> 1</span>
+			(line <span class="line-number">31</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constINIT_WITH_PLUGINS" id="INIT_WITH_PLUGINS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">INIT_WITH_PLUGINS</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">32</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 06 Sep 2013 14:21:11 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

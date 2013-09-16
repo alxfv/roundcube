@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class rcube_csv2vcard</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> rcube_csv2vcard</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">CSV to vCard data converter</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Aleksander Machniak &lt;<a href="mailto:alec@alec.pl">alec@alec.pl</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_rcube_csv2vcard.php.html">/rcube_csv2vcard.php</a> (line <span class="field">26</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																								<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$csv2vcard_map" title="details" class="var-name">$csv2vcard_map</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$label_map" title="details" class="var-name">$label_map</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$local_label_map" title="details" class="var-name">$local_label_map</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$map" title="details" class="var-name">$map</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$vcards" title="details" class="var-name">$vcards</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">rcube_csv2vcard</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$lang</span> = <span class="var-default">'en_US'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#csv_to_vcard" title="details" class="method-name">csv_to_vcard</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#export" title="details" class="method-name">export</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#import" title="details" class="method-name">import</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$csv</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#parse_header" title="details" class="method-name">parse_header</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$elements</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#parse_line" title="details" class="method-name">parse_line</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$line</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$csv2vcard_map" id="$csv2vcard_map"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$csv2vcard_map</span>
+			 = <span class="var-default">array(<br />        // MS Outlook 2010<br />        'anniversary'           =&gt; 'anniversary',<br />        'assistants_name'       =&gt; 'assistant',<br />        'assistants_phone'      =&gt; 'phone:assistant',<br />        'birthday'              =&gt; 'birthday',<br />        'business_city'         =&gt; 'locality:work',<br />        'business_countryregion' =&gt; 'country:work',<br />        'business_fax'          =&gt; 'phone:work,fax',<br />        'business_phone'        =&gt; 'phone:work',<br />        'business_phone_2'      =&gt; 'phone:work2',<br />        'business_postal_code'  =&gt; 'zipcode:work',<br />        'business_state'        =&gt; 'region:work',<br />        'business_street'       =&gt; 'street:work',<br />        //'business_street_2'     =&gt; '',<br />        //'business_street_3'     =&gt; '',<br />        'car_phone'             =&gt; 'phone:car',<br />        'categories'            =&gt; 'categories',<br />        //'children'              =&gt; '',<br />        'company'               =&gt; 'organization',<br />        //'company_main_phone'    =&gt; '',<br />        'department'            =&gt; 'department',<br />        //'email_2_address'       =&gt; '', //@TODO<br />        //'email_2_type'          =&gt; '',<br />        //'email_3_address'       =&gt; '', //@TODO<br />        //'email_3_type'          =&gt; '',<br />        'email_address'         =&gt; 'email:main',<br />        //'email_type'            =&gt; '',<br />        'first_name'            =&gt; 'firstname',<br />        'gender'                =&gt; 'gender',<br />        'home_city'             =&gt; 'locality:home',<br />        'home_countryregion'    =&gt; 'country:home',<br />        'home_fax'              =&gt; 'phone:home,fax',<br />        'home_phone'            =&gt; 'phone:home',<br />        'home_phone_2'          =&gt; 'phone:home2',<br />        'home_postal_code'      =&gt; 'zipcode:home',<br />        'home_state'            =&gt; 'region:home',<br />        'home_street'           =&gt; 'street:home',<br />        //'home_street_2'         =&gt; '',<br />        //'home_street_3'         =&gt; '',<br />        //'initials'              =&gt; '',<br />        //'isdn'                  =&gt; '',<br />        'job_title'             =&gt; 'jobtitle',<br />        //'keywords'              =&gt; '',<br />        //'language'              =&gt; '',<br />        'last_name'             =&gt; 'surname',<br />        //'location'              =&gt; '',<br />        'managers_name'         =&gt; 'manager',<br />        'middle_name'           =&gt; 'middlename',<br />        //'mileage'               =&gt; '',<br />        'mobile_phone'          =&gt; 'phone:cell',<br />        'notes'                 =&gt; 'notes',<br />        //'office_location'       =&gt; '',<br />        'other_city'            =&gt; 'locality:other',<br />        'other_countryregion'   =&gt; 'country:other',<br />        'other_fax'             =&gt; 'phone:other,fax',<br />        'other_phone'           =&gt; 'phone:other',<br />        'other_postal_code'     =&gt; 'zipcode:other',<br />        'other_state'           =&gt; 'region:other',<br />        'other_street'          =&gt; 'street:other',<br />        //'other_street_2'        =&gt; '',<br />        //'other_street_3'        =&gt; '',<br />        'pager'                 =&gt; 'phone:pager',<br />        'primary_phone'         =&gt; 'phone:pref',<br />        //'profession'            =&gt; '',<br />        //'radio_phone'           =&gt; '',<br />        'spouse'                =&gt; 'spouse',<br />        'suffix'                =&gt; 'suffix',<br />        'title'                 =&gt; 'title',<br />        'web_page'              =&gt; 'website:homepage',<br /><br />        // Thunderbird<br />        'birth_day'             =&gt; 'birthday-d',<br />        'birth_month'           =&gt; 'birthday-m',<br />        'birth_year'            =&gt; 'birthday-y',<br />        'display_name'          =&gt; 'displayname',<br />        'fax_number'            =&gt; 'phone:fax',<br />        'home_address'          =&gt; 'street:home',<br />        //'home_address_2'        =&gt; '',<br />        'home_country'          =&gt; 'country:home',<br />        'home_zipcode'          =&gt; 'zipcode:home',<br />        'mobile_number'         =&gt; 'phone:cell',<br />        'nickname'              =&gt; 'nickname',<br />        'organization'          =&gt; 'organization',<br />        'pager_number'          =&gt; 'phone:pager',<br />        'primary_email'         =&gt; 'email:pref',<br />        'secondary_email'       =&gt; 'email:other',<br />        'web_page_1'            =&gt; 'website:homepage',<br />        'web_page_2'            =&gt; 'website:other',<br />        'work_phone'            =&gt; 'phone:work',<br />        'work_address'          =&gt; 'street:work',<br />        //'work_address_2'        =&gt; '',<br />        'work_country'          =&gt; 'country:work',<br />        'work_zipcode'          =&gt; 'zipcode:work',<br />        'last'                  =&gt; 'surname',<br />        'first'                 =&gt; 'firstname',<br />        'work_city'             =&gt; 'locality:work',<br />        'work_state'            =&gt; 'region:work',<br />        'home_city_short'       =&gt; 'locality:home',<br />        'home_state_short'      =&gt; 'region:home',<br />    )</span>			(line <span class="line-number">33</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">CSV to vCard fields mapping</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$label_map" id="$label_map"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$label_map</span>
+			 = <span class="var-default">array(<br />        // MS Outlook 2010<br />        'anniversary'       =&gt; &quot;Anniversary&quot;,<br />        'assistants_name'   =&gt; &quot;Assistant's Name&quot;,<br />        'assistants_phone'  =&gt; &quot;Assistant's Phone&quot;,<br />        'birthday'          =&gt; &quot;Birthday&quot;,<br />        'business_city'     =&gt; &quot;Business City&quot;,<br />        'business_countryregion' =&gt; &quot;Business Country/Region&quot;,<br />        'business_fax'      =&gt; &quot;Business Fax&quot;,<br />        'business_phone'    =&gt; &quot;Business Phone&quot;,<br />        'business_phone_2'  =&gt; &quot;Business Phone 2&quot;,<br />        'business_postal_code' =&gt; &quot;Business Postal Code&quot;,<br />        'business_state'    =&gt; &quot;Business State&quot;,<br />        'business_street'   =&gt; &quot;Business Street&quot;,<br />        //'business_street_2' =&gt; &quot;Business Street 2&quot;,<br />        //'business_street_3' =&gt; &quot;Business Street 3&quot;,<br />        'car_phone'         =&gt; &quot;Car Phone&quot;,<br />        'categories'        =&gt; &quot;Categories&quot;,<br />        //'children'          =&gt; &quot;Children&quot;,<br />        'company'           =&gt; &quot;Company&quot;,<br />        //'company_main_phone' =&gt; &quot;Company Main Phone&quot;,<br />        'department'        =&gt; &quot;Department&quot;,<br />        //'directory_server'  =&gt; &quot;Directory Server&quot;,<br />        //'email_2_address'   =&gt; &quot;E-mail 2 Address&quot;,<br />        //'email_2_type'      =&gt; &quot;E-mail 2 Type&quot;,<br />        //'email_3_address'   =&gt; &quot;E-mail 3 Address&quot;,<br />        //'email_3_type'      =&gt; &quot;E-mail 3 Type&quot;,<br />        'email_address'     =&gt; &quot;E-mail Address&quot;,<br />        //'email_type'        =&gt; &quot;E-mail Type&quot;,<br />        'first_name'        =&gt; &quot;First Name&quot;,<br />        'gender'            =&gt; &quot;Gender&quot;,<br />        'home_city'         =&gt; &quot;Home City&quot;,<br />        'home_countryregion' =&gt; &quot;Home Country/Region&quot;,<br />        'home_fax'          =&gt; &quot;Home Fax&quot;,<br />        'home_phone'        =&gt; &quot;Home Phone&quot;,<br />        'home_phone_2'      =&gt; &quot;Home Phone 2&quot;,<br />        'home_postal_code'  =&gt; &quot;Home Postal Code&quot;,<br />        'home_state'        =&gt; &quot;Home State&quot;,<br />        'home_street'       =&gt; &quot;Home Street&quot;,<br />        //'home_street_2'     =&gt; &quot;Home Street 2&quot;,<br />        //'home_street_3'     =&gt; &quot;Home Street 3&quot;,<br />        //'initials'          =&gt; &quot;Initials&quot;,<br />        //'isdn'              =&gt; &quot;ISDN&quot;,<br />        'job_title'         =&gt; &quot;Job Title&quot;,<br />        //'keywords'          =&gt; &quot;Keywords&quot;,<br />        //'language'          =&gt; &quot;Language&quot;,<br />        'last_name'         =&gt; &quot;Last Name&quot;,<br />        //'location'          =&gt; &quot;Location&quot;,<br />        'managers_name'     =&gt; &quot;Manager's Name&quot;,<br />        'middle_name'       =&gt; &quot;Middle Name&quot;,<br />        //'mileage'           =&gt; &quot;Mileage&quot;,<br />        'mobile_phone'      =&gt; &quot;Mobile Phone&quot;,<br />        'notes'             =&gt; &quot;Notes&quot;,<br />        //'office_location'   =&gt; &quot;Office Location&quot;,<br />        'other_city'        =&gt; &quot;Other City&quot;,<br />        'other_countryregion' =&gt; &quot;Other Country/Region&quot;,<br />        'other_fax'         =&gt; &quot;Other Fax&quot;,<br />        'other_phone'       =&gt; &quot;Other Phone&quot;,<br />        'other_postal_code' =&gt; &quot;Other Postal Code&quot;,<br />        'other_state'       =&gt; &quot;Other State&quot;,<br />        'other_street'      =&gt; &quot;Other Street&quot;,<br />        //'other_street_2'    =&gt; &quot;Other Street 2&quot;,<br />        //'other_street_3'    =&gt; &quot;Other Street 3&quot;,<br />        'pager'             =&gt; &quot;Pager&quot;,<br />        'primary_phone'     =&gt; &quot;Primary Phone&quot;,<br />        //'profession'        =&gt; &quot;Profession&quot;,<br />        //'radio_phone'       =&gt; &quot;Radio Phone&quot;,<br />        'spouse'            =&gt; &quot;Spouse&quot;,<br />        'suffix'            =&gt; &quot;Suffix&quot;,<br />        'title'             =&gt; &quot;Title&quot;,<br />        'web_page'          =&gt; &quot;Web Page&quot;,<br /><br />        // Thunderbird<br />        'birth_day'         =&gt; &quot;Birth Day&quot;,<br />        'birth_month'       =&gt; &quot;Birth Month&quot;,<br />        'birth_year'        =&gt; &quot;Birth Year&quot;,<br />        'display_name'      =&gt; &quot;Display Name&quot;,<br />        'fax_number'        =&gt; &quot;Fax Number&quot;,<br />        'home_address'      =&gt; &quot;Home Address&quot;,<br />        //'home_address_2'    =&gt; &quot;Home Address 2&quot;,<br />        'home_country'      =&gt; &quot;Home Country&quot;,<br />        'home_zipcode'      =&gt; &quot;Home ZipCode&quot;,<br />        'mobile_number'     =&gt; &quot;Mobile Number&quot;,<br />        'nickname'          =&gt; &quot;Nickname&quot;,<br />        'organization'      =&gt; &quot;Organization&quot;,<br />        'pager_number'      =&gt; &quot;Pager Namber&quot;,<br />        'primary_email'     =&gt; &quot;Primary Email&quot;,<br />        'secondary_email'   =&gt; &quot;Secondary Email&quot;,<br />        'web_page_1'        =&gt; &quot;Web Page 1&quot;,<br />        'web_page_2'        =&gt; &quot;Web Page 2&quot;,<br />        'work_phone'        =&gt; &quot;Work Phone&quot;,<br />        'work_address'      =&gt; &quot;Work Address&quot;,<br />        //'work_address_2'    =&gt; &quot;Work Address 2&quot;,<br />        'work_country'      =&gt; &quot;Work Country&quot;,<br />        'work_zipcode'      =&gt; &quot;Work ZipCode&quot;,<br />    )</span>			(line <span class="line-number">140</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">CSV label to text mapping for English</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$local_label_map" id="$local_label_map"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$local_label_map</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">237</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$map" id="$map"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$map</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">239</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$vcards" id="$vcards"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$vcards</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">238</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">247</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">rcube_csv2vcard</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$lang</span> = <span class="var-default">'en_US'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$lang</span><span class="var-description">: File language</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcsv_to_vcard" id="csv_to_vcard"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">csv_to_vcard</span> (line <span class="line-number">374</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Convert CSV data row to vCard</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			csv_to_vcard
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodexport" id="export"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">export</span> (line <span class="line-number">302</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> rcube_vcard List of vcards</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			export
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodimport" id="import"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">import</span> (line <span class="line-number">267</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			import
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$csv</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$csv</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodparse_header" id="parse_header"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">parse_header</span> (line <span class="line-number">339</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse CSV header line, detect fields mapping</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			parse_header
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$elements</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$elements</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodparse_line" id="parse_line"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">parse_line</span> (line <span class="line-number">310</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse CSV file line</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			parse_line
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$line</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$line</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 06 Sep 2013 14:21:12 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

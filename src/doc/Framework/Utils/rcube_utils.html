@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class rcube_utils</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> rcube_utils</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Utility class providing common functions</p>
+		<p class="notes">
+			Located in <a class="field" href="_rcube_utils.php.html">/rcube_utils.php</a> (line <span class="field">27</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#INPUT_GET" title="details" class="const-name">INPUT_GET</a> = 					<span class="var-type"> 0x0101</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#INPUT_GPC" title="details" class="const-name">INPUT_GPC</a> = 					<span class="var-type"> 0x0103</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#INPUT_POST" title="details" class="const-name">INPUT_POST</a> = 					<span class="var-type"> 0x0102</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+									<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+												<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">boolean</span>
+										<a href="#check_email" title="details" class="method-name">check_email</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$dns_check</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">bool</span>
+										<a href="#check_ip" title="details" class="method-name">check_ip</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$ip</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">boolean</span>
+										<a href="#check_referer" title="details" class="method-name">check_referer</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">array</span>
+										<a href="#explode_quoted_string" title="details" class="method-name">explode_quoted_string</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$delimiter</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#file2class" title="details" class="method-name">file2class</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">boolean</span>
+										<a href="#get_boolean" title="details" class="method-name">get_boolean</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#get_input_value" title="details" class="method-name">get_input_value</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fname</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$source</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allow_html</span> = <span class="var-default">FALSE</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">array</span>
+										<a href="#get_opt" title="details" class="method-name">get_opt</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$aliases</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#html_identifier" title="details" class="method-name">html_identifier</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">boolean</span>
+										<a href="#https_check" title="details" class="method-name">https_check</a>
+											([<span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$use_https</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#idn_convert" title="details" class="method-name">idn_convert</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$is_utf</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#idn_to_ascii" title="details" class="method-name">idn_to_ascii</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#idn_to_utf8" title="details" class="method-name">idn_to_utf8</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">boolean</span>
+										<a href="#mem_check" title="details" class="method-name">mem_check</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$need</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#mod_css_styles" title="details" class="method-name">mod_css_styles</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$container_id</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$allow_remote</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">mixed</span>
+										<a href="#normalize_string" title="details" class="method-name">normalize_string</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$as_array</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#parse_host" title="details" class="method-name">parse_host</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#parse_input_value" title="details" class="method-name">parse_input_value</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allow_html</span> = <span class="var-default">FALSE</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">NULL</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#prompt_silent" title="details" class="method-name">prompt_silent</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$prompt</span> = <span class="var-default">&quot;Password:&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#remote_ip" title="details" class="method-name">remote_ip</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#rep_specialchars_output" title="details" class="method-name">rep_specialchars_output</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$enctype</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$newlines</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">array</span>
+										<a href="#request2param" title="details" class="method-name">request2param</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ignore</span> = <span class="var-default">'task|action'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">mixed</span>
+										<a href="#request_header" title="details" class="method-name">request_header</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">void</span>
+										<a href="#setcookie" title="details" class="method-name">setcookie</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$exp</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">int</span>
+										<a href="#strtotime" title="details" class="method-name">strtotime</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$date</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">array</span>
+										<a href="#tokenize_string" title="details" class="method-name">tokenize_string</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#xss_entity_decode" title="details" class="method-name">xss_entity_decode</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">string</span>
+										<a href="#xss_entity_decode_callback" title="details" class="method-name">xss_entity_decode_callback</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$matches</span>)
+									</div>
+																																																																																																																																																																																																																																															</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodcheck_email" id="check_email"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static check_email</span> (line <span class="line-number">61</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">E-mail address validation.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True on success, False if address is invalid</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			check_email
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$dns_check</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: Email address</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$dns_check</span><span class="var-description">: True to check dns</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheck_ip" id="check_ip"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static check_ip</span> (line <span class="line-number">155</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validates IPv4 or IPv6 address</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if the address is valid</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			check_ip
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$ip</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ip</span><span class="var-description">: IP address in v4 or v6 format</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheck_referer" id="check_referer"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static check_referer</span> (line <span class="line-number">198</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check whether the HTTP referer matches the current request</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if referer is the same host+path, false if not</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			check_referer
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodexplode_quoted_string" id="explode_quoted_string"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static explode_quoted_string</span> (line <span class="line-number">690</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Explode quoted string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> String items</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			explode_quoted_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$delimiter</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$delimiter</span><span class="var-description">: Delimiter expression string for preg_match()</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$string</span><span class="var-description">: Input string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfile2class" id="file2class"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static file2class</span> (line <span class="line-number">507</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generate CSS classes from mimetype and filename extension</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> CSS classes separated by space</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			file2class
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mimetype</span><span class="var-description">: Mimetype</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: Filename</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_boolean" id="get_boolean"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static get_boolean</span> (line <span class="line-number">931</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Find out if the string content means true or false</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Boolean value</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_boolean
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_input_value" id="get_input_value"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static get_input_value</span> (line <span class="line-number">308</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read input value and convert it for internal use  Performs stripslashes() and charset conversion if necessary</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Field value or NULL if not available</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_input_value
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fname</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$source</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allow_html</span> = <span class="var-default">FALSE</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fname</span><span class="var-description">: Field name to read</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$source</span><span class="var-description">: Source to get value from (GPC)</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$allow_html</span><span class="var-description">: Allow HTML tags in field value</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$charset</span><span class="var-description">: Charset to convert into</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_opt" id="get_opt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static get_opt</span> (line <span class="line-number">854</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse commandline arguments into a hash array</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Argument values hash</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_opt
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$aliases</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$aliases</span><span class="var-description">: Argument alias names</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhtml_identifier" id="html_identifier"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static html_identifier</span> (line <span class="line-number">418</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Convert the given string into a valid HTML identifier</p>
+<p class="description"><p>Same functionality as done in app.js with rcube_webmail.html_identifier()</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			html_identifier
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$encode</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$encode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodhttps_check" id="https_check"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static https_check</span> (line <span class="line-number">579</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if working in SSL mode</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			https_check
+		</span>
+					([<span class="var-type">integer</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$use_https</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$port</span><span class="var-description">: HTTPS port number</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$use_https</span><span class="var-description">: Enables 'use_https' option checking</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodidn_convert" id="idn_convert"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static idn_convert</span> (line <span class="line-number">787</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			idn_convert
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$input</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$is_utf</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$input</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$is_utf</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodidn_to_ascii" id="idn_to_ascii"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static idn_to_ascii</span> (line <span class="line-number">771</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			idn_to_ascii
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodidn_to_utf8" id="idn_to_utf8"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static idn_to_utf8</span> (line <span class="line-number">781</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			idn_to_utf8
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmem_check" id="mem_check"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static mem_check</span> (line <span class="line-number">562</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if we can process not exceeding memory_limit</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if memory won't be exceeded, False otherwise</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			mem_check
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$need</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$need</span><span class="var-description">: Required amount of memory</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmod_css_styles" id="mod_css_styles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static mod_css_styles</span> (line <span class="line-number">438</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Replace all css definitions with #container [def]  and remove css-inlined scripting</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Modified CSS source</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			mod_css_styles
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$container_id</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$allow_remote</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source</span><span class="var-description">: CSS source code</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$container_id</span><span class="var-description">: Container ID to use as prefix</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$allow_remote</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnormalize_string" id="normalize_string"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static normalize_string</span> (line <span class="line-number">828</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Normalize the given string for fulltext search.</p>
+<p class="description"><p>Currently only optimized for Latin-1 characters; to be extended</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Normalized string or a list of normalized tokens</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			normalize_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$as_array</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string (UTF-8)</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$as_array</span><span class="var-description">: True to return list of words as array</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodparse_host" id="parse_host"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static parse_host</span> (line <span class="line-number">608</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Replaces hostname variables.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Hostname</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			parse_host
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Hostname</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$host</span><span class="var-description">: Optional IMAP hostname</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodparse_input_value" id="parse_input_value"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static parse_input_value</span> (line <span class="line-number">348</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse/validate input value. See self::get_input_value()  Performs stripslashes() and charset conversion if necessary</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Parsed value</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			parse_input_value
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allow_html</span> = <span class="var-default">FALSE</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: Input value</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$allow_html</span><span class="var-description">: Allow HTML tags in field value</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$charset</span><span class="var-description">: Charset to convert into</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprompt_silent" id="prompt_silent"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static prompt_silent</span> (line <span class="line-number">894</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Safe password prompt for command line  from http://blogs.sitepoint.com/2009/05/01/interactive-cli-password-prompt-in-php/</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Password</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			prompt_silent
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$prompt</span> = <span class="var-default">&quot;Password:&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$prompt</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodremote_ip" id="remote_ip"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static remote_ip</span> (line <span class="line-number">640</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns remote IP address and forwarded addresses if found</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Remote IP address(es)</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			remote_ip
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodrep_specialchars_output" id="rep_specialchars_output"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static rep_specialchars_output</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Replacing specials characters to a specific encoding type</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The quoted string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			rep_specialchars_output
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$enctype</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$newlines</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$enctype</span><span class="var-description">: Encoding type: text|html|xml|js|url</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mode</span><span class="var-description">: Replace mode for tags: show|replace|remove</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$newlines</span><span class="var-description">: Convert newlines</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrequest2param" id="request2param"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static request2param</span> (line <span class="line-number">398</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Convert array of request parameters (prefixed with _)  to a regular array with non-prefixed keys.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Hash array with all request parameters</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			request2param
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$ignore</span> = <span class="var-default">'task|action'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$mode</span><span class="var-description">: Source to get value from (GPC)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ignore</span><span class="var-description">: PCRE expression to skip parameters by name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrequest_header" id="request_header"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static request_header</span> (line <span class="line-number">668</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read a specific HTTP request header.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Header value or null if not available</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			request_header
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Header name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetcookie" id="setcookie"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static setcookie</span> (line <span class="line-number">41</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Helper method to set a cookie with the current path and host settings</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setcookie
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$exp</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Cookie name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: Cookie value</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$exp</span><span class="var-description">: Expiration time</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstrtotime" id="strtotime"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static strtotime</span> (line <span class="line-number">718</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Improved equivalent to strtotime()</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Unix timestamp</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			strtotime
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$date</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$date</span><span class="var-description">: Date string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodtokenize_string" id="tokenize_string"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static tokenize_string</span> (line <span class="line-number">812</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Split the given string into word tokens</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of tokens</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			tokenize_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input to tokenize</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodxss_entity_decode" id="xss_entity_decode"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static xss_entity_decode</span> (line <span class="line-number">531</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Decode escaped entities used by known XSS exploits.</p>
+<p class="description"><p>See http://downloads.securityfocus.com/vulnerabilities/exploits/26800.eml for examples</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Decoded string</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			xss_entity_decode
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$content</span><span class="var-description">: CSS content to decode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodxss_entity_decode_callback" id="xss_entity_decode_callback"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/StaticMethod.png" />
+		<span class="method-title">static xss_entity_decode_callback</span> (line <span class="line-number">549</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">preg_replace_callback callback for xss_entity_decode</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Decoded entity</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			xss_entity_decode_callback
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$matches</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$matches</span><span class="var-description">: Result from preg_replace_callback</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constINPUT_GET" id="INPUT_GET"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">INPUT_GET</span>
+			 = <span class="const-default"> 0x0101</span>
+			(line <span class="line-number">30</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constINPUT_GPC" id="INPUT_GPC"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">INPUT_GPC</span>
+			 = <span class="const-default"> 0x0103</span>
+			(line <span class="line-number">32</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+<a name="constINPUT_POST" id="INPUT_POST"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">INPUT_POST</span>
+			 = <span class="const-default"> 0x0102</span>
+			(line <span class="line-number">31</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	
+</div>
+						
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 06 Sep 2013 14:21:19 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

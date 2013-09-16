@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs for page bootstrap.php</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="file-name"><img src="../../media/images/Page_logo.png" alt="File" style="vertical-align: middle">/bootstrap.php</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+											<a href="#sec-constants">Constants</a>
+			|									<a href="#sec-functions">Functions</a>
+			</div>
+	<div class="info-box-body">	
+		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Roundcube Framework Initialization</p>
+		
+			</div>
+</div>
+		
+
+	
+	<a name="sec-constants"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+									<span class="disabled">Constants</span>
+			|										<a href="#sec-functions">Functions</a>
+					</div>
+		<div class="info-box-body">	
+			<a name="defineRCUBE_CHARSET"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">RCUBE_CHARSET</span> = 'UTF-8'
+			(line <span class="line-number">59</span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineRCUBE_CONFIG_DIR"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">RCUBE_CONFIG_DIR</span> = RCUBE_INSTALL_PATH.'config/'
+			(line <span class="line-number">70</span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineRCUBE_INSTALL_PATH"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">RCUBE_INSTALL_PATH</span> = RCUBE_LIB_DIR
+			(line <span class="line-number">66</span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineRCUBE_LIB_DIR"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">RCUBE_LIB_DIR</span> = dirname(__FILE__).'/'
+			(line <span class="line-number">62</span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineRCUBE_LOCALIZATION_DIR"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">RCUBE_LOCALIZATION_DIR</span> = RCUBE_INSTALL_PATH.'localization/'
+			(line <span class="line-number">78</span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineRCUBE_PLUGINS_DIR"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">RCUBE_PLUGINS_DIR</span> = RCUBE_INSTALL_PATH.'plugins/'
+			(line <span class="line-number">74</span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+<a name="defineRCUBE_VERSION"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Constant.png" />
+		<span class="const-title">
+			<span class="const-name">RCUBE_VERSION</span> = '0.9.4'
+			(line <span class="line-number">58</span>)
+		</span>
+	</div>
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+		
+</div>
+		</div>
+	</div>
+	
+	
+	<a name="sec-functions"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Functions</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+													<a href="#sec-constants">Constants</a>
+				|									<span class="disabled">Functions</span>
+		</div>
+		<div class="info-box-body">	
+			<a name="functionabbreviate_string" id="functionabbreviate_string"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">abbreviate_string</span> (line <span class="line-number">237</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Truncate string if it is longer than the allowed length.</p>
+<p class="description"><p>Replace the middle or the ending part of a string with a placeholder.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Abbreviated string</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			abbreviate_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$maxlength</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$placeholder</span> = <span class="var-default">&#039;...&#039;</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$ending</span> = <span class="var-default">false</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$maxlength</span><span class="var-description">: Max. length</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$placeholder</span><span class="var-description">: Replace removed chars with this</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$ending</span><span class="var-description">: Set to True if string should be truncated from the end</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionarray_keys_recursive" id="functionarray_keys_recursive"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">array_keys_recursive</span> (line <span class="line-number">264</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get all keys from array (recursive).</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> List of array keys</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			array_keys_recursive
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$array</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$array</span><span class="var-description">: Input array</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionasciiwords" id="functionasciiwords"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">asciiwords</span> (line <span class="line-number">284</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove all non-ascii and non-word chars except ., -, _</p>
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			asciiwords
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$css_id</span> = <span class="var-default">false</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$replace_with</span> = <span class="var-default">&#039;&#039;</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$css_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$replace_with</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionformat_email" id="functionformat_email"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">format_email</span> (line <span class="line-number">364</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Format e-mail address</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Formatted e-mail address</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			format_email
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: E-mail address</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionformat_email_recipient" id="functionformat_email_recipient"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">format_email_recipient</span> (line <span class="line-number">340</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compose a valid representation of name and e-mail address</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Formatted string</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			format_email_recipient
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">&#039;&#039;</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: E-mail address</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Person name</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionget_offset_sec" id="functionget_offset_sec"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">get_offset_sec</span> (line <span class="line-number">186</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns number of seconds for a specified offset string.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Number of seconds</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_offset_sec
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: String representation of the offset (e.g. 20min, 5h, 2days, 1week)</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionget_offset_time" id="functionget_offset_time"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">get_offset_time</span> (line <span class="line-number">220</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Create a unix timestamp with a specified offset from now.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Unix timestamp</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_offset_time
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$offset_str</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$factor</span> = <span class="var-default">1</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$offset_str</span><span class="var-description">: String representation of the offset (e.g. 20min, 5h, 2days)</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$factor</span><span class="var-description">: Factor to multiply with the offset</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionidn_to_ascii" id="functionidn_to_ascii"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">idn_to_ascii</span> (line <span class="line-number">460</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			idn_to_ascii
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$domain</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$flags</span> = <span class="var-default">null</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$domain</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$flags</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionidn_to_utf8" id="functionidn_to_utf8"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">idn_to_utf8</span> (line <span class="line-number">438</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">intl replacement functions</p>
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			idn_to_utf8
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$domain</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$flags</span> = <span class="var-default">null</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$domain</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$flags</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionin_array_nocase" id="functionin_array_nocase"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">in_array_nocase</span> (line <span class="line-number">113</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Similar function as in_array() but case-insensitive</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if found, False if not</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			in_array_nocase
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$needle</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$haystack</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$heystack</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$needle</span><span class="var-description">: Needle value</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$heystack</span><span class="var-description">: Array to search in</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$haystack</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionis_ascii" id="functionis_ascii"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">is_ascii</span> (line <span class="line-number">299</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if a string contains only ascii characters</p>
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			is_ascii
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$control_chars</span> = <span class="var-default">true</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: String to check</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$control_chars</span><span class="var-description">: Includes control characters</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionmb_strlen" id="functionmb_strlen"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">mb_strlen</span> (line <span class="line-number">401</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">mbstring replacement functions</p>
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mb_strlen
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionmb_strpos" id="functionmb_strpos"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">mb_strpos</span> (line <span class="line-number">421</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mb_strpos
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$haystack</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$needle</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$haystack</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$needle</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$offset</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionmb_strrpos" id="functionmb_strrpos"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">mb_strrpos</span> (line <span class="line-number">426</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mb_strrpos
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$haystack</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$needle</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$haystack</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$needle</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$offset</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionmb_strtolower" id="functionmb_strtolower"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">mb_strtolower</span> (line <span class="line-number">406</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mb_strtolower
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionmb_strtoupper" id="functionmb_strtoupper"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">mb_strtoupper</span> (line <span class="line-number">411</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mb_strtoupper
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionmb_substr" id="functionmb_substr"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">mb_substr</span> (line <span class="line-number">416</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			mb_substr
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$start</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$len</span> = <span class="var-default">null</span>])
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$start</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$len</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionparse_bytes" id="functionparse_bytes"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">parse_bytes</span> (line <span class="line-number">133</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse a human readable string for a number of bytes.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Number of bytes</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">float</span>
+		<span class="method-name">
+			parse_bytes
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input string</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionrcube_autoload" id="functionrcube_autoload"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">rcube_autoload</span> (line <span class="line-number">486</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Use PHP5 autoload for dynamic class loading</p>
+	<ul class="tags">
+				<li><span class="field">todo:</span> Make Zend, PEAR etc play with this</li>
+				<li><span class="field">todo:</span> Make our classes conform to a more straight forward CS.</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			rcube_autoload
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$classname</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$classname</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionrcube_pear_error" id="functionrcube_pear_error"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">rcube_pear_error</span> (line <span class="line-number">520</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Local callback function for PEAR errors</p>
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			rcube_pear_error
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$err</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$err</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionslashify" id="functionslashify"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">slashify</span> (line <span class="line-number">164</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Make sure the string ends with a slash</p>
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			slashify
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionstrip_newlines" id="functionstrip_newlines"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">strip_newlines</span> (line <span class="line-number">326</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove new lines characters from given string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Stripped string</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			strip_newlines
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input value</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionstrip_quotes" id="functionstrip_quotes"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">strip_quotes</span> (line <span class="line-number">313</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove single and double quotes from a given string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Dequoted string</li>
+			</ul>
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			strip_quotes
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: Input value</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionunslashify" id="functionunslashify"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">unslashify</span> (line <span class="line-number">173</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove slashes at the end of the string</p>
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			unslashify
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$str</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionversion_parse" id="functionversion_parse"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<img src="../../media/images/Function.png" />
+		<span class="method-title">version_parse</span> (line <span class="line-number">387</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fix version number so it can be used correctly in version_compare()</p>
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			version_parse
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$version</span>, <span class="var-type">return</span>&nbsp;<span class="var-name">1</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$version</span><span class="var-description">: Version number string</span>			</li>
+					<li>
+				<span class="var-type">return</span>
+				<span class="var-name">1</span><span class="var-description">: Version number string</span>			</li>
+				</ul>
+		
+	
+</div>
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 06 Sep 2013 14:21:09 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>
